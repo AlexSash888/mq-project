@@ -163,6 +163,14 @@ h6 {
     min-width: 36rem;
 }
 
+.our_products{
+    width: 100vw;
+    min-width: 36rem;
+    margin-bottom: 12.5rem;
+}
+
+
+.products-pic,
 .trends-pic {
     display: flex;
     width: 100vw;
@@ -239,7 +247,7 @@ h6 {
     flex-direction: column;
     justify-content: start;
     width: 780px;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 
@@ -250,6 +258,8 @@ h6 {
     align-items: stretch;
     padding-bottom: 60px;
 }
+
+
 
 .card-title {
     font-family: OpenSans-Bold, sans-serif;
@@ -392,7 +402,7 @@ h6 {
     margin-right: auto;
     text-align: center;
     padding-bottom: 1rem;
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
 }
 
 
