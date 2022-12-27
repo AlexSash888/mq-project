@@ -481,7 +481,7 @@ h6 {
     height: 48px;
     border: none;
     background: #b59f5b;
-    background-image: url("https://netology-code.github.io/html-2-homeworks/form-elements/search-field/img/search.svg");
+    background-image: url("../svg/search.svg");
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: center center;
@@ -650,6 +650,7 @@ h6 {
     position: relative;
     right: 16px;
     bottom: 1px;
+  
 }
 
 .footer_pic:nth-child(3) {
@@ -665,16 +666,16 @@ h6 {
 }
 
 .footer_icon_dribbble {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg");
+    background-image: url("../svg/001-dribbble.svg");
 
 }
 
 .footer_icon_pinterest {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
 }
 
 .footer_icon_tumblr {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
 }
 
 .footer_link-copyrights {
