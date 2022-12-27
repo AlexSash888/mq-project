@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: bold;
+
+    src:
+        local("OpenSans-Bold"),
+        url('sources/fonts/OpenSans-Bold.ttf') format("ttf"),
+        url('../fonts/OpenSans-Bold.woff') format("woff"),
+        url('sources/fonts/OpenSans-Regular.woff2') format("woff2");
+
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    src:
+        local("OpenSans-Regular"),
+        url('sources/fonts/OpenSans-Regular.ttf') format("ttf"),
+        url('../fonts/OpenSans-Regular.woff') format("woff"),
+        url('sources/fonts/OpenSans-Regular.woff2') format("woff2");
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+    min-width: 36rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+
+
+
+.header {
+    background-image: url("../img/banner-bg.jpg");
+    display: block;
+    width: 100%;
+    background-color: gray;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+
+    z-index: 0;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: 0.6;
+
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    width: 117rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.header-logo {
+    width: 17.8rem;
+}
+
+
+.menu-list-item {
+    display: inline-block;
+    margin-left: 3.5rem;
+}
+
+.menu-link {
+    text-align: center;
+    line-height: auto;
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.menu-link:hover {
+    color: #b59f5b;
+    text-decoration: underline;
+}
+
+.headline {
+
+    font-size: 4.5rem;
+    line-height: 1.66;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 12rem;
+    margin-top: 5rem;
+
+
+}
+
+.container-headline {
+    box-sizing: border-box;
+    width: 70rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+
+
+}
