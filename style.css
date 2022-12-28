@@ -166,7 +166,7 @@ h6 {
 .our_products {
     width: 100vw;
     min-width: 36rem;
-    margin-bottom: 6.5rem;
+    margin-bottom: 29.5rem;
     margin-top: 0.5rem;
 }
 
@@ -181,8 +181,7 @@ h6 {
 
 .picture_trends {
     box-sizing: border-box;
-   width: calc(100% / 4 - 1.2rem);
-    
+    width: calc(100% / 4 - 1.2rem);
     height: 32rem;
     position: relative;
 }
@@ -193,22 +192,79 @@ h6 {
 
 .products-pic {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 117rem;
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.pic_products {
-    height: 20rem;
-    position: relative;
+
+
+.content_shop {
+    height: 22rem;
+    padding-top: 2.2rem;
+    width: 30rem;
+    outline: 3px solid #b59f5b;
+    outline-offset: 20px;
 }
 
+.shop-description {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+   
+}
+
+.content_shop {
+    font-size: 1.4rem;
+
+}
+
+.shops_link {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.shop_link {
+    color: #b59f5b;
+}
+
+.shop_button {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.shop_price {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.old_price {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-decoration: line-through;
+}
+
+.in_shop {
+    width: 14rem;
+    height: 5rem;
+    background-color: #b59f5b;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
 
 .pic_in {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -221,7 +277,7 @@ h6 {
     border: 3px solid #b59f5b;
     padding: 8%;
     z-index: 2;
-    
+
 }
 
 .trends_content_header {
