@@ -621,18 +621,13 @@ h6 {
 }
 
 /* -----------------------------footer------------------------------------------- */
-
+/* 
 .card-footer {
 
     width: 100vw;
     min-width: 36rem;
-    /* background-color: #f4f6f7;
-    color: #000; */
     margin-left: auto;
     margin-right: auto;
-
-
-
 
 }
 
@@ -662,7 +657,7 @@ h6 {
 }
 
 .footer_icon_dribbble {
-    background-image: url("../svg/001-dribbble.svg"), url("svg/001-dribbble.svg"), url("svg\001-dribbble.svg");
+    background-image: url("../svg/001-dribbble.svg");
 }
 
 .footer_icon_pinterest {
@@ -710,4 +705,4 @@ h6 {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
