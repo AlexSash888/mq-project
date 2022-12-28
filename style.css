@@ -166,7 +166,7 @@ h6 {
 .our_products {
     width: 100vw;
     min-width: 36rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 6.5rem;
 }
 
 
@@ -662,19 +662,19 @@ h6 {
 }
 
 .footer_icon_dribbble {
-    background-image: url("svg/001-dribbble.svg");
+    background-image: url("../svg/001-dribbble.svg"), url("svg/001-dribbble.svg"), url("svg\001-dribbble.svg");
 }
 
 .footer_icon_pinterest {
-    background-image: url("svg/001-pinterest.svg");
+    background-image: url("../svg/001-pinterest.svg");
 }
 
 .footer_icon_tumblr {
-    background-image: url("svg/003-tumblr.svg");
+    background-image: url("../svg/003-tumblr.svg");
 }
 
 .footer_icon_twitter {
-    background-image: url("svg/004-twitter.svg");
+    background-image: url("../svg/004-twitter.svg");
 }
 
 .footer_link-copyrights {
@@ -685,8 +685,8 @@ h6 {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding-top: 8rem;
-    padding-bottom: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
     text-transform: capitalize;
 
 }
