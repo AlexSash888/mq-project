@@ -623,16 +623,16 @@ h6 {
 /* -----------------------------footer------------------------------------------- */
 
 .card-footer {
-    
+
     width: 100vw;
     min-width: 36rem;
     /* background-color: #f4f6f7;
     color: #000; */
     margin-left: auto;
     margin-right: auto;
- 
- 
-  
+
+
+
 
 }
 
@@ -649,10 +649,10 @@ h6 {
     display: inline-block;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-  
+
 }
 
-.ft_pic{
+.ft_pic {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
@@ -662,25 +662,24 @@ h6 {
 }
 
 .footer_icon_dribbble {
-    background-image: url("../svg/001-dribbble.svg");
-
+    background-image: url("svg/001-dribbble.svg");
 }
 
 .footer_icon_pinterest {
-    background-image: url("../svg/001-pinterest.svg");
+    background-image: url("svg/001-pinterest.svg");
 }
 
 .footer_icon_tumblr {
-    background-image: url("../svg/003-tumblr.svg");
+    background-image: url("svg/003-tumblr.svg");
 }
 
 .footer_icon_twitter {
-    background-image: url("../svg/004-twitter.svg");
+    background-image: url("svg/004-twitter.svg");
 }
 
 .footer_link-copyrights {
     display: flex;
-    font-family: OpenSans-Bold, sans-serif;
+    font-family:OpenSans-Bold, sans-serif;
     font-size: 1.2rem;
     line-height: 4rem;
     justify-content: center;
@@ -692,10 +691,10 @@ h6 {
 
 }
 
- .footer_link {
-     color: #999;
+.footer_link {
+    color: #999;
 
-} 
+}
 
 .footer_link:hover {
     color: #b59f5b;
