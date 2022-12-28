@@ -95,7 +95,6 @@ h6 {
     left: 0;
     background-color: #000000;
     opacity: 0.6;
-
     z-index: -1;
 }
 
@@ -144,7 +143,6 @@ h6 {
     padding-bottom: 12rem;
     margin-top: 5rem;
 
-
 }
 
 .container-headline {
@@ -178,17 +176,14 @@ h6 {
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
-    /* position: relative;
-    z-index: 1; */
-    
+
 }
 
 .picture_trends {
-    /* width: calc(25% - 0.4rem); */
-    /* height: 32rem; */
-    object-fit:cover;
+
+    object-fit: cover;
     position: relative;
-    
+
 }
 
 .picture_trends:nth-child(n+2) {
@@ -217,7 +212,7 @@ h6 {
 .shop-description {
     font-size: 1.5rem;
     line-height: 2.2rem;
-   
+
 }
 
 .content_shop {
@@ -354,8 +349,6 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-   
-
 
 }
 
@@ -372,8 +365,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* width: 780px; */
-    /* padding-bottom: 60px; */
+ 
 }
 
 
@@ -394,7 +386,6 @@ h6 {
     font-weight: Bold;
     font-size: 20px;
     text-transform: uppercase;
-
     margin: 0;
 
 }
@@ -497,8 +488,6 @@ h6 {
     border: none;
     background: #e1d9bd;
     padding-right: 0.5rem;
-
-
 }
 
 .new-posts-trend {
@@ -515,7 +504,6 @@ h6 {
     background-color: #e1d9bd;
     position: absolute;
     left: 48%;
-
 }
 
 .trends {
@@ -528,7 +516,7 @@ h6 {
     margin-right: auto;
     text-align: center;
     padding-bottom: 1rem;
-    /* margin-bottom: 2.5rem; */
+   
 }
 
 
@@ -580,7 +568,6 @@ h6 {
     position: relative;
     bottom: 7px;
 }
-
 
 
 /* --------------------------------------------------------------------------------------------Buttons----------------------------------- */
@@ -690,8 +677,6 @@ h6 {
     border: solid 3px #eee;
     padding: 4px 11px;
     margin: 2px;
-    /* margin: 0 auto; */
-
 
 }
 
@@ -820,7 +805,6 @@ h6 {
 .footer_link:hover {
     color: #b59f5b;
 }
-
 
 .visually-hidden {
     position: absolute;
