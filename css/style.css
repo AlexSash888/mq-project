@@ -163,10 +163,10 @@ h6 {
     min-width: 36rem;
 }
 
-.our_products{
+.our_products {
     width: 100vw;
     min-width: 36rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 6.5rem;
 }
 
 
@@ -174,15 +174,12 @@ h6 {
 .trends-pic {
     display: flex;
     width: 100vw;
-    /* flex-flow: row wrap;
-        justify-content: center; */
     margin-left: auto;
     margin-right: auto;
 }
 
 .picture_trends {
     box-sizing: border-box;
-
     flex: calc(25% - 0.4rem);
     height: 32rem;
     position: relative;
@@ -198,7 +195,58 @@ h6 {
     object-fit: cover;
 }
 
+.trends_content_header{
+    width: 100%;
+}
+.trends_content {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    border: 3px solid #b59f5b;
+    padding: 9%;
+    z-index: 2;
+}
 
+.picture_trends::after{
+    content: "";
+    background-color: #000000;
+    opacity: 0.57;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.category_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+.category_list_item{
+    margin-right: 2rem;
+}
+
+.category_link {
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.trends_link{
+color:white;
+}
+
+.trends_title{
+    font-size: 2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
 
 
 
@@ -220,12 +268,10 @@ h6 {
 
 .cards__blog {
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    /* max-width: 120rem; */
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
@@ -355,7 +401,7 @@ h6 {
     padding-bottom: 30px;
     line-height: 2;
     text-align: center;
-    bottom: 10px;
+    bottom: 0.7rem;
 
 }
 
@@ -623,61 +669,41 @@ h6 {
 /* -----------------------------footer------------------------------------------- */
 
 .card-footer {
-    display: flex;
+
     width: 100vw;
-    height: 83px;
     min-width: 36rem;
-    background-color: #f4f6f7;
-    text-align: center;
-    vertical-align: middle;
-    color: #000;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -55px;
 
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 83px;
-    width: 100vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f4f6f7;
 }
 
 
 .footer_pic {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+}
+
+.ft_pic {
     display: block;
-    width: 24px;
-    height: 24px;
-    padding-left: 28px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px;
-}
-
-.footer_pic:nth-child(1) {
-    position: relative;
-    right: 16px;
-    bottom: 1px;
-  
-}
-
-.footer_pic:nth-child(3) {
-    position: relative;
-    right: -9px;
-
-}
-
-.footer_pic:nth-child(2) {
-    position: relative;
-    right: 9px;
-
+    background-size: 2.2rem;
+    background-position: center;
 }
 
 .footer_icon_dribbble {
     background-image: url("../svg/001-dribbble.svg");
-
 }
 
 .footer_icon_pinterest {
@@ -688,26 +714,27 @@ h6 {
     background-image: url("../svg/003-tumblr.svg");
 }
 
+.footer_icon_twitter {
+    background-image: url("../svg/004-twitter.svg");
+}
+
 .footer_link-copyrights {
     display: flex;
-    font-family: OpenSans-Bold, sans-serif;
-    font-size: 12px;
-    line-height: 40px;
-    display: flex;
+    font-family:OpenSans-Bold, sans-serif;
+    font-size: 1.2rem;
+    line-height: 4rem;
     justify-content: center;
     align-items: center;
-    color: #999;
-    margin-top: 42px;
-    padding-bottom: 9px;
+    font-weight: bold;
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
     text-transform: capitalize;
 
 }
 
 .footer_link {
     color: #999;
-    position: relative;
-    right: -5px;
-    bottom: -6px;
+
 }
 
 .footer_link:hover {
@@ -724,4 +751,4 @@ h6 {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} 
