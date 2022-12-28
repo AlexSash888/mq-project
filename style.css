@@ -171,7 +171,7 @@ h6 {
 }
 
 
-.products-pic,
+
 .trends-pic {
     display: flex;
     width: 100vw;
@@ -181,7 +181,8 @@ h6 {
 
 .picture_trends {
     box-sizing: border-box;
-    flex: calc(25% - 0.4rem);
+   width: calc(100% / 4 - 1.2rem);
+    
     height: 32rem;
     position: relative;
 }
@@ -189,6 +190,20 @@ h6 {
 .picture_trends:nth-child(n+2) {
     margin-left: 0.4rem;
 }
+
+.products-pic {
+    display: flex;
+    justify-content: space-around;
+    width: 117rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pic_products {
+    height: 20rem;
+    position: relative;
+}
+
 
 .pic_in {
     width: 100%;
