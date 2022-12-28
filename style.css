@@ -193,8 +193,9 @@ h6 {
 
 .products-pic {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 117rem;
+    min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
 }
