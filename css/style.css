@@ -75,7 +75,7 @@ h6 {
     display: block;
     width: 100%;
     background-color: gray;
-
+    position: absolute;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +83,7 @@ h6 {
     margin-right: auto;
     margin-left: auto;
 
-    z-index: 0;
+    z-index: -1;
 }
 
 .header::after {
@@ -103,6 +103,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     padding: 3rem;
     width: 117rem;
     margin-left: auto;
@@ -177,13 +178,17 @@ h6 {
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
+    /* position: relative;
+    z-index: 1; */
+    
 }
 
 .picture_trends {
-    box-sizing: border-box;
-    width: calc(100% / 4 - 1.2rem);
-    height: 32rem;
+    /* width: calc(25% - 0.4rem); */
+    /* height: 32rem; */
+    object-fit:cover;
     position: relative;
+    
 }
 
 .picture_trends:nth-child(n+2) {
@@ -275,7 +280,7 @@ h6 {
     left: 1.5rem;
     right: 1.5rem;
     border: 3px solid #b59f5b;
-    padding: 8%;
+    padding: 6%;
     z-index: 2;
 
 }
@@ -349,6 +354,7 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
+   
 
 
 }
