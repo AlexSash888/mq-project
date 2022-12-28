@@ -71,7 +71,7 @@ h6 {
 
 
 .header {
-    background-image: url("img\banner-bg.jpg");
+    background-image: url("../img/banner-bg.jpg");
     display: block;
     width: 100%;
     background-color: gray;
@@ -623,56 +623,42 @@ h6 {
 /* -----------------------------footer------------------------------------------- */
 
 .card-footer {
-    display: flex;
+    
     width: 100vw;
-    height: 83px;
     min-width: 36rem;
-    background-color: #f4f6f7;
-    text-align: center;
-    vertical-align: middle;
-    color: #000;
+    /* background-color: #f4f6f7;
+    color: #000; */
     margin-left: auto;
     margin-right: auto;
-    margin-top: -55px;
+ 
+ 
+  
 
 }
 
 .footer-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 83px;
-    width: 100vw;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #f4f6f7;
 }
 
 
 .footer_pic {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  
+}
+
+.ft_pic{
     display: block;
-    width: 24px;
-    height: 24px;
-    padding-left: 28px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 20px;
-}
-
-.footer_pic:nth-child(1) {
-    position: relative;
-    right: 16px;
-    bottom: 1px;
-
-}
-
-.footer_pic:nth-child(3) {
-    position: relative;
-    right: -9px;
-
-}
-
-.footer_pic:nth-child(2) {
-    position: relative;
-    right: 9px;
-
+    background-size: 2.2rem;
+    background-position: center;
 }
 
 .footer_icon_dribbble {
@@ -688,27 +674,28 @@ h6 {
     background-image: url("../svg/003-tumblr.svg");
 }
 
+.footer_icon_twitter {
+    background-image: url("../svg/004-twitter.svg");
+}
+
 .footer_link-copyrights {
     display: flex;
     font-family: OpenSans-Bold, sans-serif;
-    font-size: 12px;
-    line-height: 40px;
-    display: flex;
+    font-size: 1.2rem;
+    line-height: 4rem;
     justify-content: center;
     align-items: center;
-    color: #999;
-    margin-top: 42px;
-    padding-bottom: 9px;
+    font-weight: bold;
+    padding-top: 8rem;
+    padding-bottom: 3rem;
     text-transform: capitalize;
 
 }
 
-.footer_link {
-    color: #999;
-    position: relative;
-    right: -5px;
-    bottom: -6px;
-}
+ .footer_link {
+     color: #999;
+
+} 
 
 .footer_link:hover {
     color: #b59f5b;
