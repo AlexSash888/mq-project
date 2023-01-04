@@ -75,7 +75,6 @@ h6 {
     display: block;
     width: 100%;
     background-color: gray;
-    position: absolute;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,24 +161,11 @@ h6 {
     /* min-width: 36rem; */
 }
 
-.our_products {
-    width: 100%;
-    margin-bottom: 10rem;
-    margin-top: 0.5rem;
-}
-
-.products-pic {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 112.5rem;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 .trends-pic {
     display: flex;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
 
@@ -187,16 +173,100 @@ h6 {
 
 .picture_trends {
     width: 25%;
-    object-fit: cover;
     position: relative;
 
 }
+
+.picture_trends-garden{
+    background-image: url("../img/trend1.jpg");
+    display: block;
+    background-color: gray;
+    -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.picture_trends_cheeses{
+    background-image: url("../img/trend2.jpg");
+    display: block;
+    background-color: gray;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.picture_trends_mountains{
+    background-image: url("../img/trend3.jpg");
+    display: block;
+    background-color: gray;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.picture_trends_vitamins {
+    background-image: url("../img/trend4.jpg");
+    display: block;
+    background-color: gray;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 
 .picture_trends:nth-child(n+2) {
     margin-left: 0.4rem;
 }
 
+.pic_in {
+    width: 100%;
+    object-fit: cover;
+}
 
+
+.trends_content {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    border: 3px solid #b59f5b;
+    padding: 6%;
+    z-index: 2;
+
+}
+
+.trends_content_header {
+    width: 100%;
+}
+
+
+.picture_trends::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.57;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
 
 
 .content_shop {
@@ -207,16 +277,37 @@ h6 {
     outline-offset: 20px;
 }
 
-.shop-description {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-
-}
-
 .content_shop {
     font-size: 1.4rem;
 
 }
+
+.shop_description_bunny{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    height: 9rem;
+    overflow: auto;
+}
+
+
+.shop_description_pillow{
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    height: 4.5rem;
+    /* width: 30rem; */
+    overflow: auto;
+} 
+
+.shop_description_frame{
+
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    height: 7rem;
+    /* width: 30rem; */
+    overflow: auto; 
+}
+
+
 
 .shops_link {
     text-transform: uppercase;
@@ -261,39 +352,24 @@ h6 {
     cursor: pointer;
 }
 
-.pic_in {
+.our_products {
     width: 100%;
-    object-fit: cover;
+    margin-bottom: 10rem;
+    margin-top: 0.5rem;
 }
 
-
-.trends_content {
-    position: absolute;
-    bottom: 1.5rem;
-    left: 1.5rem;
-    right: 1.5rem;
-    border: 3px solid #b59f5b;
-    padding: 6%;
-    z-index: 2;
-
-}
-
-.trends_content_header {
+.products-pic {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
+    max-width: 112rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-.picture_trends::after {
-    content: "";
-    background-color: #000000;
-    opacity: 0.57;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-}
+
+
 
 .category_list {
     display: flex;
