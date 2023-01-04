@@ -158,29 +158,35 @@ h6 {
 /* -----------------------------------------------------------------------------------------------------------------------------------------------     */
 
 .trends {
-    width: 100vw;
-    min-width: 36rem;
+    width: 100%;
+    /* min-width: 36rem; */
 }
 
 .our_products {
-    width: 100vw;
-    min-width: 36rem;
+    width: 100%;
     margin-bottom: 10rem;
     margin-top: 0.5rem;
 }
 
+.products-pic {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 112.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .trends-pic {
     display: flex;
-    width: 100vw;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .picture_trends {
-
+    width: 25%;
     object-fit: cover;
     position: relative;
 
@@ -190,14 +196,6 @@ h6 {
     margin-left: 0.4rem;
 }
 
-.products-pic {
-    display: flex;
-    justify-content: space-around;
-    width: 117rem;
-    min-width: 36rem;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 
@@ -299,7 +297,6 @@ h6 {
 
 .category_list {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     margin-bottom: 0.8rem;
 }
@@ -309,6 +306,7 @@ h6 {
     color: #b59f5b;
     font-weight: bold;
     font-size: 1.4rem;
+    line-height: 2rem;;
     margin-right: 2rem;
 }
 
@@ -449,11 +447,11 @@ h6 {
 }
 
 .frame {
-    width: 367px;
-    padding-left: 30px;
+    width: 36.7rem;
+    padding-left: 3rem;
     font-family: OpenSans-Bold, sans-serif;
     position: relative;
-    bottom: 12px;
+    bottom: 0.4rem;
 
 }
 
