@@ -277,15 +277,14 @@ h6 {
     outline-offset: 20px;
 }
 
-.content_shop {
+/* .content_shop {
     font-size: 1.4rem;
-
-}
+} */
 
 .shop_description_bunny{
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 9rem;
+    height: 8.8rem;
     overflow: auto;
 }
 
@@ -293,8 +292,7 @@ h6 {
 .shop_description_pillow{
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 4.5rem;
-    /* width: 30rem; */
+    height: 4.4rem;
     overflow: auto;
 } 
 
@@ -302,8 +300,7 @@ h6 {
 
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 7rem;
-    /* width: 30rem; */
+    height: 6.6rem;
     overflow: auto; 
 }
 
@@ -388,16 +385,30 @@ h6 {
 
 .trends_link {
     color: white;
-}
-
-.trends_title {
     font-size: 2rem;
     line-height: 1.2;
     text-transform: uppercase;
 }
 
+.trends_title-garden {
+    height: 4.9rem;
+    overflow: auto;  
+}
 
+.trends_title-cheeses {
+    height: 9.7rem;
+    overflow: auto;
+}
 
+.trends_title-mountains{
+    height: 4.9rem;
+    overflow: auto;
+}
+
+.trends_title-vitamins {
+    height: 7.3rem;
+    overflow: auto;
+}
 /* --------------------------------------------------------------------------------------------Main + Aside----------------------------------- */
 
 
