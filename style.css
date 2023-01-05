@@ -158,7 +158,7 @@ h6 {
 
 .trends {
     width: 100%;
-    /* min-width: 36rem; */
+   
 }
 
 
@@ -318,7 +318,7 @@ h6 {
 }
 
 .shop_button {
-    margin-top: 3rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -430,7 +430,7 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
@@ -459,7 +459,7 @@ h6 {
     flex-direction: row;
     justify-content: start;
     align-items: stretch;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
 }
 
 
@@ -554,7 +554,7 @@ h6 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 auto 0 auto;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     line-height: 2;
     text-align: center;
     bottom: 0.7rem;
@@ -610,23 +610,23 @@ h6 {
     ------------------------------------------Посты с фото--------------------------------------- */
 .post_list {
     display: inline-block;
-    height: 70px;
+    height: 7rem;
     text-align: left;
-    margin-bottom: 22px;
+    margin-bottom: 2rem;
 
 }
 
 
 .picture-aside {
     float: left;
-    margin-right: 20px;
+    margin-right: 2rem;
 
 }
 
 .aside-content {
     display: block;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 9rem;
 
 }
 
@@ -684,21 +684,21 @@ h6 {
 .search-button button {
     position: absolute;
     top: 0;
-    right: 0px;
-    width: 48px;
-    height: 48px;
+    right: 0;
+    width: 4.8rem;
+    height: 4.8rem;
     border: none;
     background: #b59f5b;
     background-image: url("../svg/search.svg");
     background-repeat: no-repeat;
-    background-size: 18px;
+    background-size: 1.8rem;
     background-position: center center;
     cursor: pointer;
 }
 
 .search-button button:before {
     content: "";
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #000;
 }
 
@@ -751,17 +751,17 @@ h6 {
     flex-flow: row wrap;
     padding-top: 0;
     padding: 8px;
-    margin: 0 3px 5px 3px;
+    margin: 0 0.3rem 0.5rem 0.3rem;
 }
 
 .card_tags {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    height: 29px;
+    height: 2.9rem;
     border: solid 3px #eee;
-    padding: 4px 11px;
-    margin: 2px;
+    padding: 0.4rem 1.1rem;
+    margin: 0.2rem;
 
 }
 
@@ -771,7 +771,7 @@ h6 {
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .nav_link:hover {
@@ -782,14 +782,14 @@ h6 {
 /* ----------------------------------Темы------------------------------------------------------- */
 
 .themes {
-    margin-top: 35px;
+    margin-top: 3.5rem;
     position: relative;
     right: -3px;
     padding-bottom: 0;
 }
 
 .conteiner-themes li {
-    height: 48px;
+    height: 4.8rem;
     border-bottom: 1px solid #eee;
 }
 
@@ -797,9 +797,9 @@ h6 {
 .card-themes {
     font-family: OpenSans-Bold, sans-serif;
     /* position: relative; */
-    line-height: 47px;
+    line-height: 4.7rem;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #000;
 }
 
@@ -810,17 +810,17 @@ h6 {
 
 .count {
     color: #b59f5b;
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding-left: 5px;
-    line-height: 37px;
+    padding-left: 0.5rem;
+    line-height: 3.7rem;
 }
 
 /* -----------------------------footer------------------------------------------- */
 
 .card-footer {
 
-    width: 100vw;
+    width: 100%;
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
@@ -876,8 +876,8 @@ h6 {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding-top: 6rem;
-    padding-bottom: 3.5rem;
+    margin-top: 6rem;
+    margin-bottom: 3.5rem;
     text-transform: capitalize;
 
 }
