@@ -158,28 +158,22 @@ h6 {
 
 .trends {
     width: 100%;
-   
 }
 
 
-
 .trends-pic {
-    display: flex;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
 }
 
 .picture_trends {
-    width: 25%;
+    display: flex;
+    align-items: flex-end;
+    width: calc(25% - 0.4rem);
     position: relative;
-
-}
-
-.picture_trends-garden{
-    background-image: url("../img/trend1.jpg");
-    display: block;
+    min-height: 32rem;
     background-color: gray;
     -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -190,43 +184,24 @@ h6 {
     position: relative;
 }
 
+.picture_trends-garden{
+    background-image: url("../img/trend1.jpg");
+    
+}
+
 .picture_trends_cheeses{
     background-image: url("../img/trend2.jpg");
-    display: block;
-    background-color: gray;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 .picture_trends_mountains{
     background-image: url("../img/trend3.jpg");
-    display: block;
-    background-color: gray;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+   
 }
+
 
 .picture_trends_vitamins {
     background-image: url("../img/trend4.jpg");
-    display: block;
-    background-color: gray;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  
 }
 
 
