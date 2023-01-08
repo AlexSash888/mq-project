@@ -71,7 +71,7 @@ h6 {
 
 
 .header {
-    background-image: url("../img/banner-bg.jpg");
+    /* background-image: url("../img/banner-bg.jpg"); */
     display: block;
     width: 100%;
     background-color: gray;
@@ -84,6 +84,26 @@ h6 {
 
     z-index: -1;
 }
+
+
+@media (min-width: 1200px) {
+    .header {
+        background-image: url("../img/banner-bg.jpg");
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header {
+        background-image: url("../img/banner-bg-tablet.jpg");
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url("../img/banner-mobile.jpg");
+    }
+}
+
 
 .header::after {
     content: "";
@@ -162,10 +182,23 @@ h6 {
 
 
 .trends-pic {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 
+}
+
+
+@media (max-width:360px) and (min-width:768px) {
+    .trends {
+        width: 50%;
+    }
+
+    .trends-pic {
+        display: flex;
+        flex-flow: row wrap;
+        width: 50%;
+    }
 }
 
 .picture_trends {
@@ -175,33 +208,33 @@ h6 {
     position: relative;
     min-height: 32rem;
     background-color: gray;
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
    -moz-background-size: cover;
-   -o-background-size: cover;
+   -o-background-size: cover; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+
 }
 
-.picture_trends-garden{
+.picture_trends-garden {
     background-image: url("../img/trend1.jpg");
-    
+
 }
 
-.picture_trends_cheeses{
+.picture_trends_cheeses {
     background-image: url("../img/trend2.jpg");
 }
 
-.picture_trends_mountains{
+.picture_trends_mountains {
     background-image: url("../img/trend3.jpg");
-   
+
 }
 
 
 .picture_trends_vitamins {
     background-image: url("../img/trend4.jpg");
-  
+
 }
 
 
@@ -256,7 +289,7 @@ h6 {
     font-size: 1.4rem;
 } */
 
-.shop_description_bunny{
+.shop_description_bunny {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: 8.8rem;
@@ -264,19 +297,19 @@ h6 {
 }
 
 
-.shop_description_pillow{
+.shop_description_pillow {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: 4.4rem;
     overflow: auto;
-} 
+}
 
-.shop_description_frame{
+.shop_description_frame {
 
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: 6.6rem;
-    overflow: auto; 
+    overflow: auto;
 }
 
 
@@ -354,7 +387,8 @@ h6 {
     color: #b59f5b;
     font-weight: bold;
     font-size: 1.4rem;
-    line-height: 2rem;;
+    line-height: 2rem;
+    ;
     margin-right: 2rem;
 }
 
@@ -367,7 +401,7 @@ h6 {
 
 .trends_title-garden {
     height: 4.9rem;
-    overflow: auto;  
+    overflow: auto;
 }
 
 .trends_title-cheeses {
@@ -375,7 +409,7 @@ h6 {
     overflow: auto;
 }
 
-.trends_title-mountains{
+.trends_title-mountains {
     height: 4.9rem;
     overflow: auto;
 }
@@ -384,6 +418,7 @@ h6 {
     height: 7.3rem;
     overflow: auto;
 }
+
 /* --------------------------------------------------------------------------------------------Main + Aside----------------------------------- */
 
 
@@ -425,7 +460,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: start;
- 
+
 }
 
 
@@ -576,7 +611,7 @@ h6 {
     margin-right: auto;
     text-align: center;
     padding-bottom: 1rem;
-   
+
 }
 
 
