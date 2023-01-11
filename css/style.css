@@ -177,7 +177,10 @@ h6 {
 /* -----------------------------------------------------------------------------------------------------------------------------------------------     */
 
 .trends {
+    /* display: flex;
+  flex-wrap: wrap; */
     width: 100%;
+
 }
 
 
@@ -189,32 +192,24 @@ h6 {
 }
 
 
-@media (max-width:360px) and (min-width:768px) {
-    .trends {
-        width: 50%;
-    }
-
-    .trends-pic {
-        display: flex;
-        flex-flow: row wrap;
-        width: 50%;
-    }
-}
-
 .picture_trends {
     display: flex;
-    align-items: flex-end;
+    /* flex-flow: row wrap; */
     width: calc(25% - 0.4rem);
     position: relative;
     min-height: 32rem;
     background-color: gray;
-    /* -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
+}
+
+
+@media (min-width: 1200px) {
+    .picture_trends:nth-child(n+2) {
+        margin-left: 0.4rem;
+    }
 }
 
 .picture_trends-garden {
@@ -238,14 +233,33 @@ h6 {
 }
 
 
-.picture_trends:nth-child(n+2) {
-    margin-left: 0.4rem;
+@media (min-width: 641px) and (max-width: 1199px) {
+    .picture_trends {
+        width: calc(50% - 0.2rem);
+    }
+
+
+    .picture_trends:nth-child(2n+2) {
+        margin-left: 0.25em;
+    }
+
+    .picture_trends:nth-child(-n+2) {
+        margin-bottom: 0.25em;
+
+    }
 }
 
-.pic_in {
-    width: 100%;
-    object-fit: cover;
+@media (max-width:640px) {
+    .trends-pic {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
+
+
+
+
 
 
 .trends_content {
