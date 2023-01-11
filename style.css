@@ -235,16 +235,16 @@ h6 {
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .picture_trends {
-        width: calc(50% - 0.2rem);
+        width: calc(50% - 0.3rem);
     }
 
 
-    .picture_trends:nth-child(2n+2) {
-        margin-left: 0.25em;
+    .picture_trends:nth-child(even) {
+        margin-left: 0.3rem;
     }
 
     .picture_trends:nth-child(-n+2) {
-        margin-bottom: 0.25em;
+        margin-bottom: 0.3rem;
 
     }
 }
