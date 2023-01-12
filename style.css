@@ -323,13 +323,10 @@ h6 {
     height: 22rem;
     padding-top: 2.2rem;
     width: 30rem;
-    outline: 3px solid #b59f5b;
+    outline: 0.3rem solid #b59f5b;
     outline-offset: 2rem;
 }
 
-/* .content_shop {
-    font-size: 1.4rem;
-} */
 
 .shop_description_bunny {
     font-size: 1.5rem;
@@ -358,7 +355,7 @@ h6 {
 
 .shops_link {
     text-transform: uppercase;
-    color: #000;
+    
     font-size: 2rem;
     line-height: 1.2;
 }
@@ -455,7 +452,7 @@ h6 {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    max-width:120rem;
+    max-width: 120rem;
     min-width: 36rem;
     padding-top: 6.4rem;
     align-items: stretch;
@@ -463,41 +460,22 @@ h6 {
     margin-right: auto;
 }
 
-.cards__blog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width:120rem;
-    min-width: 36rem;
-    margin-left: auto;
-    margin-right: auto;
 
-}
 
 .sidebar {
     width: 24%;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start; */
-
 }
 
 .postlist {
     width: 66%;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: start; */
+ 
 }
 
 
 .travel-health {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* justify-content: start; */
-    align-items:flex-start;
+    align-items: flex-start;
     margin-bottom: 6rem;
 }
 
@@ -507,7 +485,7 @@ h6 {
     font-family: OpenSans-Bold, sans-serif;
     text-align: left;
     line-height: 2.4rem;
-    font-weight: Bold;
+    font-weight: bold;
     font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
@@ -669,9 +647,9 @@ h6 {
     height: 7rem;
     text-align: left;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     margin-bottom: 2rem;
-  
+
 }
 
 .picture-aside {
@@ -686,16 +664,16 @@ h6 {
     padding-top: 1rem;
     width: 18.5rem;
 
-} 
+}
 
 
 .card-date-aside {
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: normal;
     text-align: left;
     color: #a9a9a9;
-    position: relative; 
-     bottom: 9px;
+    position: relative;
+    bottom: 0.9rem;
 }
 
 
@@ -771,7 +749,7 @@ h6 {
     outline: none;
     background: #f4f6f7;
     color: #000;
-    font-size: 13px;
+    font-size: 1.3rem;
 
 }
 
@@ -808,7 +786,7 @@ h6 {
     display: flex;
     flex-flow: row wrap;
     padding-top: 0;
-    padding: 8px;
+    padding: 0.8rem;
     margin: 0 0.3rem 0.5rem 0.3rem;
 }
 
@@ -817,7 +795,7 @@ h6 {
     flex-flow: row wrap;
     align-items: center;
     height: 2.9rem;
-    border: solid 3px #eee;
+    border: solid 0.3rem #eee;
     padding: 0.4rem 1.1rem;
     margin: 0.2rem;
 
@@ -842,7 +820,7 @@ h6 {
 .themes {
     margin-top: 3.5rem;
     position: relative;
-    right: -3px;
+    right: -0.3rem;
     padding-bottom: 0;
 }
 
@@ -875,6 +853,19 @@ h6 {
 }
 
 /* -----------------------------footer------------------------------------------- */
+
+.cards__blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 120rem;
+    min-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 
 .card-footer {
 
@@ -951,9 +942,9 @@ h6 {
 
 .visually-hidden {
     position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+    width: 0.1rem;
+    height: 0.1rem;
+    margin: -0.1rem;
     padding: 0;
     border: 0;
     clip: rect(0 0 0 0);
