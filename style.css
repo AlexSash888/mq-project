@@ -97,21 +97,13 @@ h6 {
         background-image: url("../img/banner-bg-tablet.jpg");
     }
 
-    .container {
-        max-width: 76.8rem;
-    }
 }
-
-
 
 @media (max-width: 640px) {
     .header {
         background-image: url("../img/banner-mobile.jpg");
     }
 
-    .container {
-        max-width: 36rem;
-    }
 }
 
 
@@ -244,17 +236,17 @@ h6 {
 @media (min-width: 641px) and (max-width: 1199px) {
     .picture_trends {
         width: calc(50% - 0.3rem);
-    }
-
-
-    .picture_trends:nth-child(even) {
-        margin-left: 0.3rem;
-    }
-
-    .picture_trends:nth-child(-n+2) {
         margin-bottom: 0.3rem;
-
+    
     }
+
+     .picture_trends:nth-child(even) {
+        margin-left: 0.3rem;
+    } 
+
+    /* .picture_trends:nth-child(-n+2) {
+        margin-bottom: 0.3rem;
+    }  */
 }
 
 @media (max-width:640px) and (orientation: portrait) {
@@ -285,9 +277,6 @@ h6 {
 
     }
 }
-
-
-
 
 
 .trends_content {
@@ -355,12 +344,15 @@ h6 {
 
 .shops_link {
     text-transform: uppercase;
-    
     font-size: 2rem;
     line-height: 1.2;
 }
 
 .shop_link {
+    color: #b59f5b;
+}
+
+.shop_link:hover {
     color: #b59f5b;
 }
 
