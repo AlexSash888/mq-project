@@ -71,7 +71,6 @@ h6 {
 
 
 .header {
-    /* background-image: url("../img/banner-bg.jpg"); */
     display: block;
     width: 100%;
     background-color: gray;
@@ -81,9 +80,10 @@ h6 {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-
     z-index: -1;
 }
+
+
 
 
 @media (min-width: 1200px) {
@@ -96,13 +96,25 @@ h6 {
     .header {
         background-image: url("../img/banner-bg-tablet.jpg");
     }
+
+    .container {
+        max-width: 76.8rem;
+    }
 }
+
+
 
 @media (max-width: 640px) {
     .header {
         background-image: url("../img/banner-mobile.jpg");
     }
+
+    .container {
+        max-width: 36rem;
+    }
 }
+
+
 
 
 .header::after {
@@ -120,10 +132,10 @@ h6 {
 .container {
     display: flex;
     justify-content: space-between;
+    max-width: 120rem;
     align-items: center;
     position: relative;
     padding: 3rem;
-    width: 117rem;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
@@ -153,7 +165,6 @@ h6 {
 }
 
 .headline {
-
     font-size: 4.5rem;
     line-height: 1.66;
     font-weight: 700;
@@ -165,7 +176,7 @@ h6 {
 }
 
 .container-headline {
-    box-sizing: border-box;
+    position: relative;
     width: 70rem;
     text-align: center;
     margin-left: auto;
@@ -177,8 +188,6 @@ h6 {
 /* -----------------------------------------------------------------------------------------------------------------------------------------------     */
 
 .trends {
-    /* display: flex;
-  flex-wrap: wrap; */
     width: 100%;
 
 }
@@ -194,7 +203,6 @@ h6 {
 
 .picture_trends {
     display: flex;
-    /* flex-flow: row wrap; */
     width: calc(25% - 0.4rem);
     position: relative;
     min-height: 32rem;
@@ -249,14 +257,34 @@ h6 {
     }
 }
 
-@media (max-width:640px) {
+@media (max-width:640px) and (orientation: portrait) {
     .trends-pic {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 100vh;
+    }
+
+    .picture_trends {
+        width: calc(100% - 0.3rem);
+        margin: 0.3rem;
     }
 }
 
+@media (max-width: 640px) and (orientation: landscape) {
+    .picture_trends {
+        width: calc(50% - 0.3rem);
+    }
+
+
+    .picture_trends:nth-child(even) {
+        margin-left: 0.3rem;
+    }
+
+    .picture_trends:nth-child(-n+2) {
+        margin-bottom: 0.3rem;
+
+    }
+}
 
 
 
@@ -296,7 +324,7 @@ h6 {
     padding-top: 2.2rem;
     width: 30rem;
     outline: 3px solid #b59f5b;
-    outline-offset: 20px;
+    outline-offset: 2rem;
 }
 
 /* .content_shop {
@@ -379,6 +407,7 @@ h6 {
 
 .products-pic {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 112rem;
@@ -390,21 +419,6 @@ h6 {
 
 
 
-.category_list {
-    display: flex;
-    width: 100%;
-    margin-bottom: 0.8rem;
-}
-
-.category_link {
-    text-transform: uppercase;
-    color: #b59f5b;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    ;
-    margin-right: 2rem;
-}
 
 .trends_link {
     color: white;
@@ -437,16 +451,16 @@ h6 {
 
 
 .card_content {
-    width: 100vw;
-    min-width: 36rem;
     display: flex;
-    padding-top: 64px;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
+    max-width:120rem;
+    min-width: 36rem;
+    padding-top: 6.4rem;
     align-items: stretch;
-    justify-content: space-around;
-    margin: 0 auto;
-
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cards__blog {
@@ -454,7 +468,7 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    max-width:120rem;
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
@@ -462,28 +476,29 @@ h6 {
 }
 
 .sidebar {
-    width: 272px;
-    display: flex;
+    width: 24%;
+    /* display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 
 }
 
 .postlist {
-    display: flex;
+    width: 66%;
+    /* display: flex;
     flex-direction: column;
-    justify-content: start;
-
+    justify-content: start; */
 }
 
 
 .travel-health {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: stretch;
-    margin-bottom: 60px;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: start; */
+    align-items:flex-start;
+    margin-bottom: 6rem;
 }
 
 
@@ -491,9 +506,9 @@ h6 {
 .card-title {
     font-family: OpenSans-Bold, sans-serif;
     text-align: left;
-    line-height: 24px;
+    line-height: 2.4rem;
     font-weight: Bold;
-    font-size: 20px;
+    font-size: 2rem;
     text-transform: uppercase;
     margin: 0;
 
@@ -517,29 +532,29 @@ h6 {
 
 .card-name {
     font-family: OpenSans-Bold, sans-serif;
-    line-height: 40px;
+    line-height: 4rem;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 1.2rem;
 }
 
 .card-date {
     color: #888888;
-    font-size: 12px;
-    line-height: 40px;
+    font-size: 1.2rem;
+    line-height: 4rem;
 }
 
 .card-text {
     display: inline-block;
     font-family: OpenSans-Regular, sans-serif;
-    width: 367px;
-    font-size: 15px;
-    line-height: 22px;
-    padding-top: 19px;
+    width: 36.7rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    padding-top: 1.9rem;
 }
 
 
 .card-date {
-    margin-right: 15px;
+    margin-right: 1.5rem;
 }
 
 
@@ -558,12 +573,30 @@ h6 {
 }
 
 .frame {
-    width: 36.7rem;
+    width: 46%;
     padding-left: 3rem;
     font-family: OpenSans-Bold, sans-serif;
     position: relative;
     bottom: 0.4rem;
 
+}
+
+
+.category_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+.category_link {
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -578,7 +611,7 @@ h6 {
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 auto 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
     line-height: 2;
     text-align: center;
     bottom: 0.7rem;
@@ -633,13 +666,13 @@ h6 {
     
     ------------------------------------------Посты с фото--------------------------------------- */
 .post_list {
-    display: inline-block;
     height: 7rem;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap; 
     margin-bottom: 2rem;
-
+  
 }
-
 
 .picture-aside {
     float: left;
@@ -650,18 +683,19 @@ h6 {
 .aside-content {
     display: block;
     text-align: left;
-    margin-left: 9rem;
+    padding-top: 1rem;
+    width: 18.5rem;
 
-}
+} 
+
 
 .card-date-aside {
-    display: block;
     font-size: 12px;
     font-weight: normal;
     text-align: left;
     color: #a9a9a9;
-    position: relative;
-    bottom: 9px;
+    position: relative; 
+     bottom: 9px;
 }
 
 
@@ -671,11 +705,11 @@ h6 {
     font-size: 1.4rem;
     font-weight: bold;
     text-align: left;
-    line-height: 18px;
+    line-height: 1.8rem;
     margin: 0;
     text-transform: uppercase;
     position: relative;
-    bottom: 7px;
+    bottom: 0.7rem;
 }
 
 
@@ -683,7 +717,7 @@ h6 {
 
 .find-button {
     position: relative;
-    width: 27.2rem;
+    width: 28.7rem;
     margin: 3.8rem auto 6.2rem auto;
 
 }
@@ -716,7 +750,7 @@ h6 {
     background-image: url("../svg/search.svg");
     background-repeat: no-repeat;
     background-size: 1.8rem;
-    background-position: center center;
+    background-position: center;
     cursor: pointer;
 }
 
@@ -731,7 +765,7 @@ h6 {
 
 .email-button #email {
     width: 100%;
-    height: 48px;
+    height: 4.8rem;
     padding-left: 2rem;
     border: none;
     outline: none;
@@ -744,28 +778,28 @@ h6 {
 .email-button [type="submit"] {
     font-family: OpenSans-Bold, sans-serif;
     width: 100%;
-    height: 48px;
-    padding-left: 20px;
+    height: 4.8rem;
+    padding-left: 2rem;
     border: 1px transparent;
     outline: none;
-    line-height: 40px;
+    line-height: 4rem;
     background: #b59f5b;
     color: #fff;
-    margin-top: 18px;
+    margin-top: 1.8rem;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 1.4rem;
     text-transform: uppercase;
     cursor: pointer;
 }
 
 .send-email {
     position: relative;
-    bottom: 13px;
+    bottom: 1.3rem;
 }
 
 
 .latest_posts_sends {
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 
 }
 
