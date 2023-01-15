@@ -206,12 +206,6 @@ h6 {
 }
 
 
-@media (min-width: 1200px) {
-    .picture_trends:nth-child(n+2) {
-        margin-left: 0.4rem;
-    }
-}
-
 .picture_trends-garden {
     background-image: url("../img/trend1.jpg");
 
@@ -232,51 +226,6 @@ h6 {
 
 }
 
-
-@media (min-width: 641px) and (max-width: 1199px) {
-    .picture_trends {
-        width: calc(50% - 0.3rem);
-        margin-bottom: 0.3rem;
-    
-    }
-
-     .picture_trends:nth-child(even) {
-        margin-left: 0.3rem;
-    } 
-
-    /* .picture_trends:nth-child(-n+2) {
-        margin-bottom: 0.3rem;
-    }  */
-}
-
-@media (max-width:640px) and (orientation: portrait) {
-    .trends-pic {
-        display: flex;
-        flex-direction: column;
-        width: 100vh;
-    }
-
-    .picture_trends {
-        width: calc(100% - 0.3rem);
-        margin: 0.3rem;
-    }
-}
-
-@media (max-width: 640px) and (orientation: landscape) {
-    .picture_trends {
-        width: calc(50% - 0.3rem);
-    }
-
-
-    .picture_trends:nth-child(even) {
-        margin-left: 0.3rem;
-    }
-
-    .picture_trends:nth-child(-n+2) {
-        margin-bottom: 0.3rem;
-
-    }
-}
 
 
 .trends_content {
@@ -442,8 +391,7 @@ h6 {
 .card_content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction:row;
     max-width: 120rem;
     min-width: 36rem;
     padding-top: 6.4rem;
@@ -451,7 +399,6 @@ h6 {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 
 .sidebar {
@@ -467,7 +414,7 @@ h6 {
 .travel-health {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     margin-bottom: 6rem;
 }
 
@@ -639,21 +586,21 @@ h6 {
     height: 7rem;
     text-align: left;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 2rem;
+   
 
 }
-
-.picture-aside {
-    float: left;
-    margin-right: 2rem;
-
+.img_post {
+    width: 7rem;
 }
 
 .aside-content {
     display: block;
     text-align: left;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
     width: 18.5rem;
 
 }
@@ -941,4 +888,108 @@ h6 {
     border: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+
+/* media */
+
+@media (min-width: 1200px) {
+    .picture_trends:nth-child(n+2) {
+        margin-left: 0.4rem;
+    }
+
+    .card_content {
+         justify-content: space-between; 
+    }
+}
+
+
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .picture_trends {
+        width: calc(50% - 0.3rem);
+        margin-bottom: 0.3rem;
+    
+    }
+
+     .picture_trends:nth-child(even) {
+        margin-left: 0.3rem;
+    } 
+    
+    .card_content {
+       justify-content: center;
+       margin-left: 2rem;
+       margin-right: 2rem;
+
+    }
+    .sidebar {
+        width: 34%;
+    }
+
+    .postlist {
+        width: 66%;
+     
+    }
+
+}
+
+@media (max-width:640px) and (orientation: portrait) {
+    .trends-pic {
+        display: flex;
+        flex-direction: column;
+        width: 100vh;
+    }
+
+    .picture_trends {
+        width: calc(100% - 0.3rem);
+        margin: 0.3rem;
+    }
+
+    .card_content {
+        flex-flow: column nowrap; 
+        align-items:center;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .sidebar {
+        width: 48%;
+        
+    }
+
+    .postlist {
+        width: 50%;
+     
+    }
+}
+   
+
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .picture_trends {
+        width: calc(50% - 0.3rem);
+    }
+
+
+    .picture_trends:nth-child(even) {
+        margin-left: 0.3rem;
+    }
+
+    .picture_trends:nth-child(-n+2) {
+        margin-bottom: 0.3rem;
+
+    }
+
+    .card_content {
+        flex-flow: column nowrap; 
+        align-items:center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
 }
