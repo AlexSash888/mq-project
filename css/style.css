@@ -84,31 +84,6 @@ h6 {
 }
 
 
-
-
-@media (min-width: 1200px) {
-    .header {
-        background-image: url("../img/banner-bg.jpg");
-    }
-}
-
-@media (min-width: 641px) and (max-width: 1199px) {
-    .header {
-        background-image: url("../img/banner-bg-tablet.jpg");
-    }
-
-}
-
-@media (max-width: 640px) {
-    .header {
-        background-image: url("../img/banner-mobile.jpg");
-    }
-
-}
-
-
-
-
 .header::after {
     content: "";
     position: absolute;
@@ -156,6 +131,9 @@ h6 {
     text-decoration: underline;
 }
 
+
+
+
 .headline {
     font-size: 4.5rem;
     line-height: 1.66;
@@ -187,9 +165,8 @@ h6 {
 
 .trends-pic {
     display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -904,16 +881,63 @@ h6 {
 }
 
 
+@media (min-width: 1200px) {
+    .header {
+        background-image: url("../img/banner-bg.jpg");
+    }
+}
 
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header {
+        background-image: url("../img/banner-bg-tablet.jpg");
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url("../img/banner-mobile.jpg");
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+    }
+    .header-logo {
+        margin-top: 33%;
+     }
+
+    .container-headline {
+        width: 28rem;
+    }
+   
+
+    .headline {
+        font-size: 2.6rem;
+        margin-top: 5rem;
+    }
+}
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .picture_trends {
         width: calc(50% - 0.3rem);
-        margin-bottom: 0.3rem;
+         margin-bottom: 0.3rem; 
     
     }
 
-     .picture_trends:nth-child(even) {
+     .picture_trends:nth-child(2n) {
         margin-left: 0.3rem;
     } 
     
@@ -932,13 +956,29 @@ h6 {
      
     }
 
+    .container-headline {
+        max-width: 70rem;
+        width: 88%;
+    }
+   
+
+    .headline {
+        font-size: 5rem;
+    }
+
+    .trends-pic {
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
 }
 
 @media (max-width:640px) and (orientation: portrait) {
     .trends-pic {
         display: flex;
         flex-direction: column;
-        width: 100vh;
+        width: 100vw;
     }
 
     .picture_trends {
@@ -990,6 +1030,6 @@ h6 {
     }
 
     .sidebar {
-        width: 100%;
+        width: 100vw;
     }
 }
