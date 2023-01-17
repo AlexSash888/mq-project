@@ -80,7 +80,7 @@ h6 {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-    z-index: -1;
+   
 }
 
 
@@ -93,7 +93,7 @@ h6 {
     left: 0;
     background-color: #000000;
     opacity: 0.6;
-    z-index: -1;
+    z-index: 0;
 }
 
 .container {
@@ -103,7 +103,6 @@ h6 {
     align-items: center;
     position: relative;
     padding: 3rem 1% 2rem;
-    
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
@@ -111,6 +110,7 @@ h6 {
 
 .header-logo {
     width: 17.8rem;
+
 }
 
 
@@ -129,7 +129,7 @@ h6 {
 
 .menu-link:hover {
     color: #b59f5b;
-    text-decoration: underline;
+    /* border-bottom: 1px solid white; */
 }
 
 #menu__toggle {
@@ -146,6 +146,7 @@ h6 {
     color: white;
     padding-bottom: 12rem;
     margin-top: 5rem;
+    z-index: 2;
 
 }
 
