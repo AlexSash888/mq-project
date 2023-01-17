@@ -102,7 +102,8 @@ h6 {
     max-width: 120rem;
     align-items: center;
     position: relative;
-    padding: 3rem;
+    padding: 3rem 1% 2rem;
+    
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
@@ -131,7 +132,10 @@ h6 {
     text-decoration: underline;
 }
 
-
+#menu__toggle {
+    opacity: 0;
+  }
+  
 
 
 .headline {
@@ -155,7 +159,7 @@ h6 {
 
 }
 
-/* -----------------------------------------------------------------------------------------------------------------------------------------------     */
+/* trends    */
 
 .trends {
     width: 100%;
@@ -233,6 +237,36 @@ h6 {
     z-index: 0;
 }
 
+.trends_link {
+    color: white;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.trends_title-garden {
+    height: 4.2em;
+    /* overflow: auto; */
+}
+
+.trends_title-cheeses {
+    height: 8.3em;
+    /* overflow: auto; */
+}
+
+.trends_title-mountains {
+    height: 4.2em;
+    /* overflow: auto; */
+}
+
+.trends_title-vitamins {
+    height: 6.25em;
+    /* overflow: auto; */
+}
+
+
+
+/* Shop    */
 
 .content_shop {
     height: 22rem;
@@ -246,24 +280,24 @@ h6 {
 .shop_description_bunny {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 8.8rem;
-    overflow: auto;
+    height: 44.5%;
+    /* overflow: auto; */
 }
 
 
 .shop_description_pillow {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 4.4rem;
-    overflow: auto;
+    height: 22.5%;
+     /* overflow: scroll;  */
 }
 
 .shop_description_frame {
 
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 6.6rem;
-    overflow: auto;
+    height: 33.5%;
+    /* overflow: auto;*/
 }
 
 
@@ -272,6 +306,7 @@ h6 {
     text-transform: uppercase;
     font-size: 2rem;
     line-height: 1.2;
+    color: #000;
 }
 
 .shop_link {
@@ -335,32 +370,6 @@ h6 {
 
 
 
-.trends_link {
-    color: white;
-    font-size: 2rem;
-    line-height: 1.2;
-    text-transform: uppercase;
-}
-
-.trends_title-garden {
-    height: 4.9rem;
-    overflow: auto;
-}
-
-.trends_title-cheeses {
-    height: 9.7rem;
-    overflow: auto;
-}
-
-.trends_title-mountains {
-    height: 4.9rem;
-    overflow: auto;
-}
-
-.trends_title-vitamins {
-    height: 7.3rem;
-    overflow: auto;
-}
 
 /* --------------------------------------------------------------------------------------------Main + Aside----------------------------------- */
 
@@ -375,6 +384,8 @@ h6 {
     align-items: stretch;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1%;
+    padding-right: 1%
 }
 
 
@@ -768,7 +779,7 @@ h6 {
     line-height: 3.7rem;
 }
 
-/* -----------------------------footer------------------------------------------- */
+/* footer */
 
 .cards__blog {
     display: flex;
@@ -789,6 +800,7 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 1% ;
 
 }
 
@@ -892,9 +904,9 @@ h6 {
         background-image: url("../img/banner-bg-tablet.jpg");
         width: 100%;
     }
-    .menu {
+    /* .menu {
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 640px) {
@@ -906,9 +918,9 @@ h6 {
         height: 100vh;
     }
 
-    .menu {
+    /* .menu {
         display: none;
-    }
+    } */
 
     .container {
         flex-wrap: wrap;
@@ -1033,3 +1045,95 @@ h6 {
         width: 100vw;
     }
 }
+
+
+
+@media (max-width:640px), 
+(min-width: 641px) and (max-width: 1199px) {
+    #menu__toggle {
+        opacity: 0;
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+      
+      #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      
+      #menu__toggle:checked ~ .menu > .menu-list {
+        visibility: visible;
+        left: 0;
+      }
+      
+      .menu__btn {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      
+      
+      
+      .menu-list {
+        display: block;
+        position: fixed;
+        visibility: hidden; 
+         top: 0;
+        left: -100%; 
+        
+        width: 300px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+         transition-duration: .25s;
+      } 
+      
+      .menu-link {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+        
+        .menu-link:hover {
+        background-color: #CFD8DC;
+      }
+    }
