@@ -946,22 +946,20 @@ h6 {
     }
 
     .products-pic {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
-    .card-shop {
-     margin-left: 4%;
-     width: 46%;
-     }
 
+    .card-shop {
+        margin-left: 4%;
+        width: 46%;
+    }
 
     .card-shop:last-child {
-        
         margin-top: 6rem;
     }
 
 }
-
 
 
 @media (max-width: 640px) {
@@ -1094,7 +1092,7 @@ h6 {
     .menu__btn {
         display: block;
         position: relative;
-        top: 20px;
+        /* top: 10px; */
         right: 50px;
         width: 26px;
         height: 26px;
@@ -1123,9 +1121,20 @@ h6 {
         top: 8px;
     }
 
+    .container {
+        flex-direction:  row;
+        justify-content: space-between;
+        
+    }
+
 }
 
 @media (max-width:640px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
 
     .container {
         flex-flow: column-reverse;
