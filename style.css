@@ -66,7 +66,7 @@ h6 {
     font-weight: bold;
 }
 
-/* -------------------------------------------------------------------------------------------------------------- */
+/* ------------------------------ */
 
 
 
@@ -80,7 +80,7 @@ h6 {
     position: relative;
     margin-right: auto;
     margin-left: auto;
-   
+
 }
 
 
@@ -134,8 +134,8 @@ h6 {
 
 #menu__toggle {
     opacity: 0;
-  }
-  
+}
+
 
 
 .headline {
@@ -160,7 +160,7 @@ h6 {
 
 }
 
-/* trends    */
+/* trends   trends   trends   */
 
 .trends {
     width: 100%;
@@ -290,7 +290,7 @@ h6 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: 22.5%;
-     /* overflow: scroll;  */
+    /* overflow: scroll;  */
 }
 
 .shop_description_frame {
@@ -372,13 +372,13 @@ h6 {
 
 
 
-/* --------------------------------------------------------------------------------------------Main + Aside----------------------------------- */
+/* Main + Aside  Main + Aside  Main + Aside*/
 
 
 .card_content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:row;
+    flex-direction: row;
     max-width: 120rem;
     min-width: 36rem;
     padding-top: 6.4rem;
@@ -396,14 +396,12 @@ h6 {
 
 .postlist {
     width: 66%;
- 
-}
 
+}
 
 .travel-health {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: flex-start; */
     margin-bottom: 6rem;
 }
 
@@ -506,9 +504,8 @@ h6 {
 }
 
 
-/* --------------------------------------------------------------------------------------------Aside----------------------------------- */
 
-/* -------------------------------------------Заголовок c подчеркиванием------------------------ */
+/* Заголовок c подчеркиванием  Заголовок c подчеркиванием  Заголовок c подчеркиванием */
 
 .new-posts {
     font-family: OpenSans-Bold, sans-serif;
@@ -568,18 +565,19 @@ h6 {
 }
 
 
-/* -------------------------------------------/Заголовок с подчеркиванием------------------------
-    
-    ------------------------------------------Посты с фото--------------------------------------- */
+
+
+/* Посты с фото  Посты с фото   Посты с фото  */
 .post_list {
     height: 7rem;
     text-align: left;
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 2rem;
-   
+
 
 }
+
 .img_post {
     width: 7rem;
 }
@@ -619,7 +617,7 @@ h6 {
 }
 
 
-/* --------------------------------------------------------------------------------------------Buttons----------------------------------- */
+/*  Buttons Buttons Buttons*/
 
 .find-button {
     position: relative;
@@ -666,7 +664,7 @@ h6 {
     color: #000;
 }
 
-/* --------------------------------------------------------------------------------------------/Buttons----------------------------------- */
+/*  email-button  email-button  email-button   */
 
 
 .email-button #email {
@@ -709,7 +707,7 @@ h6 {
 
 }
 
-/* ------------------------------------------------------------------------------------------Tags---------------------------------------------------  */
+/* Tags Tags Tags */
 .tags_nav {
     display: flex;
     flex-flow: row wrap;
@@ -743,7 +741,7 @@ h6 {
 }
 
 
-/* ----------------------------------Темы------------------------------------------------------- */
+/* Темы  Темы Темы*/
 
 .themes {
     margin-top: 3.5rem;
@@ -780,7 +778,7 @@ h6 {
     line-height: 3.7rem;
 }
 
-/* footer */
+/* footer footer footer*/
 
 .cards__blog {
     display: flex;
@@ -801,7 +799,7 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1% ;
+    padding: 0 1%;
 
 }
 
@@ -883,13 +881,15 @@ h6 {
 
 /* media media media */
 
+
+
 @media (min-width: 1200px) {
     .picture_trends:nth-child(n+2) {
         margin-left: 0.4rem;
     }
 
     .card_content {
-         justify-content: space-between; 
+        justify-content: space-between;
     }
 
     .header {
@@ -900,34 +900,35 @@ h6 {
 @media (min-width: 641px) and (max-width: 1199px) {
     .picture_trends {
         width: calc(50% - 0.3rem);
-         margin-bottom: 0.3rem; 
-    
+        margin-bottom: 0.3rem;
+
     }
 
-     .picture_trends:nth-child(2n) {
+    .picture_trends:nth-child(2n) {
         margin-left: 0.3rem;
-    } 
-    
+    }
+
     .card_content {
-       justify-content: center;
-       margin-left: 2rem;
-       margin-right: 2rem;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
 
     }
+
     .sidebar {
         width: 34%;
     }
 
     .postlist {
         width: 66%;
-     
+
     }
 
     .container-headline {
         max-width: 70rem;
         width: 88%;
     }
-   
+
 
     .headline {
         font-size: 5rem;
@@ -936,7 +937,7 @@ h6 {
     .trends-pic {
         display: flex;
         flex-wrap: wrap;
-        
+
     }
 
     .header {
@@ -944,10 +945,22 @@ h6 {
         width: 100%;
     }
 
+    .products-pic {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    }
+    .card-shop {
+     margin-left: 4%;
+     width: 46%;
+     }
+
+
+    .card-shop:last-child {
+        
+        margin-top: 6rem;
+    }
+
 }
-
-   
-
 
 
 
@@ -966,14 +979,15 @@ h6 {
         flex-direction: column;
         width: 90%;
     }
+
     .header-logo {
         margin-top: 33%;
-     }
+    }
 
     .container-headline {
         width: 28rem;
     }
-   
+
 
     .headline {
         font-size: 2.6rem;
@@ -996,8 +1010,8 @@ h6 {
     }
 
     .card_content {
-        flex-flow: column nowrap; 
-        align-items:center;
+        flex-flow: column nowrap;
+        align-items: center;
         justify-content: center;
         margin-left: 1rem;
         margin-right: 1rem;
@@ -1005,15 +1019,14 @@ h6 {
 
     .sidebar {
         width: 48%;
-        
+
     }
 
     .postlist {
         width: 50%;
-     
     }
+
 }
-   
 
 
 @media (max-width: 640px) and (orientation: landscape) {
@@ -1032,8 +1045,8 @@ h6 {
     }
 
     .card_content {
-        flex-flow: column nowrap; 
-        align-items:center;
+        flex-flow: column nowrap;
+        align-items: center;
         margin-left: 1rem;
         margin-right: 1rem;
     }
@@ -1043,95 +1056,88 @@ h6 {
     }
 }
 
+/* гамбургер-меню  гамбургер-меню   гамбургер-меню */
 
-
-@media (max-width:640px), 
+@media (max-width:640px),
 (min-width: 641px) and (max-width: 1199px) {
+
+    .menu {
+        display: none;
+    }
+
     #menu__toggle {
         opacity: 0;
-      }
-      
-      #menu__toggle:checked ~ .menu__btn > span {
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
         transform: rotate(45deg);
-      }
-      
-      #menu__toggle:checked ~ .menu__btn > span::before {
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
         top: 0;
         transform: rotate(0);
-      }
-      
-      #menu__toggle:checked ~ .menu__btn > span::after {
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
         top: 0;
         transform: rotate(90deg);
-      }
-      
-      #menu__toggle:checked ~ .menu > .menu-list {
+    }
+
+    /* #menu__toggle:checked ~ .menu > .menu-list {
         visibility: visible;
         left: 65%;
         display:flex;
         flex-direction: column;
       }
-      
-      .menu__btn {
-        display: flex;
-        align-items: center;
-        position: fixed;
+       */
+
+    .menu__btn {
+        display: block;
+        position: relative;
         top: 20px;
         right: 50px;
         width: 26px;
         height: 26px;
         cursor: pointer;
         z-index: 1;
-      }
-      
-      .menu__btn > span,
-      .menu__btn > span::before,
-      .menu__btn > span::after {
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
         display: block;
         position: absolute;
         width: 100%;
         height: 2px;
         background-color: white;
         transition-duration: .25s;
-      }
-      .menu__btn > span::before {
+    }
+
+    .menu__btn>span::before {
         content: '';
         top: -8px;
-      }
-      .menu__btn > span::after {
+    }
+
+    .menu__btn>span::after {
         content: '';
         top: 8px;
-      }
-      
-      
-      
-      .menu-list {
-        display: block;
-        position: fixed;
-        visibility: hidden; 
-         top: 0;
-         right: -100%; 
-        
-        width: 300px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        /* background-color: #ECEFF1;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2); */
-         transition-duration: .25s;
-      } 
-      
-      .menu-link {
-        display: block;
-        padding: 12px 24px;
-        color: white;
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: none;
-        transition-duration: .25s;
-      }
-        
-        .menu-link:hover {
-        background-color: #CFD8DC;
-      }
     }
+
+}
+
+@media (max-width:640px) {
+
+    .container {
+        flex-flow: column-reverse;
+    }
+
+    .menu__btn {
+        display: block;
+        position: relative;
+        left: 50%;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+}
