@@ -1,4 +1,4 @@
-@font-face {
+Pull requests Issues Codespaces Marketplace Explore @AlexSash888 AlexSash888 / mq-project Public Cannot fork because you own this repository and are not a member of any organizations. Code Issues Pull requests Actions Projects Wiki Security Insights Settings mq-project/style.css @AlexSash888 AlexSash888 commit 18_01 Latest commit 8ef8503 yesterday History 1 contributor 1152 lines (886 sloc) 19 KB @font-face {
     font-family: 'Open Sans';
     font-weight: bold;
 
@@ -1122,9 +1122,9 @@ h6 {
     }
 
     .container {
-        flex-direction:  row;
+        flex-direction: row;
         justify-content: space-between;
-        
+
     }
 
 }
@@ -1149,4 +1149,205 @@ h6 {
         cursor: pointer;
         z-index: 1;
     }
+}
+
+
+
+
+/* Pop-up */
+
+
+.popup-wrapper {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    z-index: 8;
+}
+
+.popup-container {
+
+    position: relative;
+    max-width: 39rem;
+    width: 88%;
+    max-height: 58.5rem;
+    margin: auto;
+}
+
+.popup {
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 39rem;
+    padding: 55px 30px;
+    background: #ffffff;
+    margin: auto;
+}
+
+.popup-header-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.popap__header_title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.28;
+    text-transform: uppercase;
+}
+
+.popup-header-container::after {
+    content: "";
+    display: inline-block;
+    width: 6.5rem;
+    height: 3px;
+    background-color: #e1d9bd;
+    background-position: center center;
+}
+
+
+.form-group-popup {
+    display: block;
+    margin-top: 30px;
+}
+
+.form-group:last-child {
+    text-align: center;
+}
+
+.label__question {
+    display: block;
+    font-family: inherit;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../svg/form-arrows.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    background-color: rgb(244, 247, 246);
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;
+    padding-left: 20px;
+    margin: 0;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    color: #979393;
+
+}
+
+.field:focus,
+.select:focus {
+    outline: 2px solid #b59f5b;
+}
+
+.textarea {
+    font-family: inherit;
+    width: 100%;
+    min-width: 200px;
+    max-width: 3000px;
+    height: 130px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: rgb(244, 247, 246);
+    border: none;
+}
+
+.radio-group {
+    display: inline-block;
+    font-size: 13px;
+}
+
+.radio-group:nth-of-type(n+2) {
+    margin-left: 25px;
+}
+
+.radio-group-text::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.radio {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+}
+
+.radio:checked~.radio-group-text::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.button {
+    border: none;
+    padding: 15px 55px;
+    color: #ffffff;
+    width: 100%;
+    background-color: #b59f5b;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button:focus {
+    background-color: #323232;
+    outline: none;
+}
+
+.popup__close {
+    width: 1.4em;
+    height: 1em;
+    font-size: 20px;
+    position: absolute;
+    top: -1.5em;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.popup__close:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.popup__close:before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.popup__close:before,
+.popup__close:after {
+    content: "";
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.4em;
+    height: 0.2em;
 }
