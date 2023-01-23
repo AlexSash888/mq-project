@@ -1,12 +1,12 @@
-Pull requests Issues Codespaces Marketplace Explore @AlexSash888 AlexSash888 / mq-project Public Cannot fork because you own this repository and are not a member of any organizations. Code Issues Pull requests Actions Projects Wiki Security Insights Settings mq-project/style.css @AlexSash888 AlexSash888 commit 18_01 Latest commit 8ef8503 yesterday History 1 contributor 1152 lines (886 sloc) 19 KB @font-face {
+@font-face {
     font-family: 'Open Sans';
     font-weight: bold;
 
     src:
         local("OpenSans-Bold"),
-        url('sources/fonts/OpenSans-Bold.ttf') format("ttf"),
+        url('../fonts/OpenSans-Bold.ttf') format("ttf"),
         url('../fonts/OpenSans-Bold.woff') format("woff"),
-        url('sources/fonts/OpenSans-Regular.woff2') format("woff2");
+        url('../fonts\OpenSans-Bold.woff2') format("woff2");
 
 }
 
@@ -15,9 +15,9 @@ Pull requests Issues Codespaces Marketplace Explore @AlexSash888 AlexSash888 / m
     font-weight: normal;
     src:
         local("OpenSans-Regular"),
-        url('sources/fonts/OpenSans-Regular.ttf') format("ttf"),
+        url('../fonts/OpenSans-Regular.ttf') format("ttf"),
         url('../fonts/OpenSans-Regular.woff') format("woff"),
-        url('sources/fonts/OpenSans-Regular.woff2') format("woff2");
+        url('../fonts/OpenSans-Regular.woff2') format("woff2");
 
 }
 
@@ -164,14 +164,44 @@ h6 {
 
 .trends {
     width: 100%;
+}
+
+.new-posts-trend {
+    font-size: 2rem;
+    line-height: 1.45;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin:0;
+    text-align: center;
 
 }
 
+.headline_container {
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+
+.headline_container:after {
+    content: "";
+    display: inline-block;
+    width: 6.5rem;
+    height: 0.3rem;
+    background-color: #e1d9bd;
+    background-position: center center;
+    
+}
+
+.trends {
+    margin-top: 6rem;
+}
 
 .trends-pic {
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
 }
 
 
@@ -189,22 +219,22 @@ h6 {
 
 
 .picture_trends-garden {
-    background-image: url("../img/trend1.jpg");
+    background-image: url("../images/trend1.jpg");
 
 }
 
 .picture_trends_cheeses {
-    background-image: url("../img/trend2.jpg");
+    background-image: url("../images/trend2.jpg");
 }
 
 .picture_trends_mountains {
-    background-image: url("../img/trend3.jpg");
+    background-image: url("../images/trend3.jpg");
 
 }
 
 
 .picture_trends_vitamins {
-    background-image: url("../img/trend4.jpg");
+    background-image: url("../images/trend4.jpg");
 
 }
 
@@ -256,7 +286,7 @@ h6 {
 }
 
 .trends_title-mountains {
-    height: 4.2em;
+    height: 6em;
     /* overflow: auto; */
 }
 
@@ -535,25 +565,7 @@ h6 {
     padding-right: 0.5rem;
 }
 
-.new-posts-trend {
-    font-size: 2rem;
-    line-height: 1.45;
-    text-transform: uppercase;
-}
 
-.new-posts-trend:after {
-    content: "";
-    display: inline-block;
-    width: 6.5rem;
-    height: 0.3rem;
-    background-color: #e1d9bd;
-    position: absolute;
-    left: 48%;
-}
-
-.trends {
-    margin-top: 6rem;
-}
 
 .title_sidebar {
     display: block;
@@ -893,7 +905,7 @@ h6 {
     }
 
     .header {
-        background-image: url("../img/banner-bg.jpg");
+        background-image: url("../images/banner-bg.jpg");
     }
 }
 
@@ -941,7 +953,7 @@ h6 {
     }
 
     .header {
-        background-image: url("../img/banner-bg-tablet.jpg");
+        background-image: url("../images/banner-bg-tablet.jpg");
         width: 100%;
     }
 
@@ -964,7 +976,7 @@ h6 {
 
 @media (max-width: 640px) {
     .header {
-        background-image: url("../img/banner-mobile.jpg");
+        background-image: url("../images/banner-mobile.jpg");
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -1158,7 +1170,6 @@ h6 {
 
 
 .popup-wrapper {
-
     width: 100%;
     height: 100%;
     position: fixed;
@@ -1176,11 +1187,10 @@ h6 {
     width: 88%;
     max-height: 58.5rem;
     margin: auto;
+    border: 1px solid red;
 }
 
 .popup {
-
-    box-sizing: border-box;
     width: 100%;
     max-width: 39rem;
     padding: 55px 30px;
@@ -1196,8 +1206,9 @@ h6 {
 
 .popap__header_title {
     margin: 0;
-    font-size: 14px;
-    line-height: 1.28;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
