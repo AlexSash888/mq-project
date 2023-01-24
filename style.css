@@ -171,15 +171,15 @@ h6 {
     line-height: 1.45;
     text-transform: uppercase;
     font-weight: bold;
-    margin:0;
+    margin: 0;
     text-align: center;
 
 }
 
 .headline_container {
-    margin-left:auto;
-    margin-right:auto;
-    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 
@@ -190,7 +190,7 @@ h6 {
     height: 0.3rem;
     background-color: #e1d9bd;
     background-position: center center;
-    
+
 }
 
 .trends {
@@ -278,25 +278,23 @@ h6 {
 
 .trends_title-garden {
     height: auto;
-    /* overflow: auto; */
+   
 }
 
 .trends_title-cheeses {
     height: auto;
-    
+
 }
 
 .trends_title-mountains {
     height: auto;
-    
+
 }
 
 .trends_title-vitamins {
     height: auto;
-    
+
 }
-
-
 
 /* Shop    */
 
@@ -313,7 +311,7 @@ h6 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: auto;
-    
+
 }
 
 
@@ -321,7 +319,7 @@ h6 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: auto;
-   
+
 }
 
 .shop_description_frame {
@@ -329,7 +327,7 @@ h6 {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: auto;
-   
+
 }
 
 
@@ -536,18 +534,13 @@ h6 {
 }
 
 
-
-
- 
-
-
 .new-posts-aside {
-font-size: 1.4rem;
-line-height: 1.2;
-text-transform: uppercase;
-font-weight: bold;
-margin:0;
-text-align: center;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
 
 }
 
