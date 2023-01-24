@@ -213,7 +213,7 @@
                         <time class="card-date" datetime="2019-06-10">10 июня 2019</time>
                         <p class="card-name  ">Неизвестный автор</p>
                     </div>
-                 
+
                     <span class="card-text card-text-music_top">Лето на носу, а с ним и музыкальные фестивали.
                         На
                         каком же из них
@@ -365,66 +365,69 @@
                 </section>
 
 
-                <section class="latest_posts-button">
-                    <div class="search-button">
-                        <form class="find-button">
-                            <input type="text" placeholder="Найти...">
-                            <button type="submit"><span class="visually-hidden">Кнопка отправить</span></button>
+
+
+                <form class="search">
+                    <label class="form_search">
+                        <span class="visually-hidden">Кнопка поиска</span>
+                        <input type="text" class="field" name="text" placeholder="Найти..." required>
+                    </label>
+                    <button type="submit" class="button-search">
+                        <span class="visually-hidden">Найти</span>
+                    </button>
+                </form>
+
+
+                <section class="latest_posts_sends">
+                    <div class="headline_container">
+                        <h3 class="new-posts-aside">Рассылка</h3>
+                    </div>
+
+                    <div class="email-button">
+                        <form class="send-email">
+                            <label for="email">
+                                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                    placeholder="Ваш email-адрес" required>
+                                <span class="visually-hidden">Введите ваш email</span> </label>
+
+                            <button type="submit" formaction="handler.php">Подписаться<span
+                                    class="visually-hidden">Кнопка
+                                    подписаться на email-рассылку</span></button>
                         </form>
                     </div>
                 </section>
-            </section>
 
+                <section class="latest_posts_sends">
+                    <div class="headline_container">
+                        <h3 class="new-posts-aside">Теги</h3>
+                    </div>
+                    <nav class="tags_nav_wrapper">
+                        <ul class="tags_nav">
+                            <li class="card_tags"><a class="nav_link" href="#0">Fashion</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Music</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Lifestyle</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Art</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Interior</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Travel</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Food</a></li>
+                            <li class="card_tags"><a class="nav_link" href="#0">Health</a></li>
+                        </ul>
+                    </nav>
+                </section>
 
-            <section class="latest_posts_sends">
-                <div class="headline_container">
-                    <h3 class="new-posts-aside">Рассылка</h3>
-                </div>
-
-                <div class="email-button">
-                    <form class="send-email">
-                        <label for="email">
-                            <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                placeholder="Ваш email-адрес" required>
-                            <span class="visually-hidden">Введите ваш email</span> </label>
-
-                        <button type="submit" formaction="handler.php">Подписаться<span class="visually-hidden">Кнопка
-                                подписаться на email-рассылку</span></button>
-                    </form>
-                </div>
-            </section>
-
-            <section class="latest_posts_sends">
-                <div class="headline_container">
-                    <h3 class="new-posts-aside">Теги</h3>
-                </div>
-                <nav class="tags_nav_wrapper">
-                    <ul class="tags_nav">
-                        <li class="card_tags"><a class="nav_link" href="#0">Fashion</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Music</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Lifestyle</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Art</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Interior</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Travel</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Food</a></li>
-                        <li class="card_tags"><a class="nav_link" href="#0">Health</a></li>
+                <section class="latest_posts">
+                    <div class="headline_container">
+                        <h3 class="new-posts-aside">Темы</h3>
+                    </div>
+                    <ul class="conteiner-themes">
+                        <li><a href="#0" class="card-themes">Красота<sup class="count">12</sup></a></li>
+                        <li> <a href="#0" class="card-themes">Здоровье<sup class="count">14</sup></a></li>
+                        <li><a href="#0" class="card-themes">Образ жизни<sup class="count">145</sup> </a></li>
+                        <li><a href="#0" class="card-themes">Музыка<sup class="count">28</sup></a></li>
+                        <li><a href="#0" class="card-themes">Спорт<sup class="count">62</sup></a></li>
+                        <li><a href="#0" class="card-themes">Йога<sup class="count">8</sup></a></li>
                     </ul>
-                </nav>
-            </section>
-
-            <section class="latest_posts">
-                <div class="headline_container">
-                    <h3 class="new-posts-aside">Темы</h3>
-                </div>
-                <ul class="conteiner-themes">
-                    <li><a href="#0" class="card-themes">Красота<sup class="count">12</sup></a></li>
-                    <li> <a href="#0" class="card-themes">Здоровье<sup class="count">14</sup></a></li>
-                    <li><a href="#0" class="card-themes">Образ жизни<sup class="count">145</sup> </a></li>
-                    <li><a href="#0" class="card-themes">Музыка<sup class="count">28</sup></a></li>
-                    <li><a href="#0" class="card-themes">Спорт<sup class="count">62</sup></a></li>
-                    <li><a href="#0" class="card-themes">Йога<sup class="count">8</sup></a></li>
-                </ul>
-            </section>
+                </section>
         </aside>
 
 
