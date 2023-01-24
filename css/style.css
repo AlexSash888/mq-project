@@ -278,7 +278,7 @@ h6 {
 
 .trends_title-garden {
     height: auto;
-   
+
 }
 
 .trends_title-cheeses {
@@ -888,7 +888,6 @@ h6 {
     .picture_trends {
         width: calc(50% - 0.3rem);
         margin-bottom: 0.3rem;
-
     }
 
     .picture_trends:nth-child(2n) {
@@ -899,7 +898,6 @@ h6 {
         justify-content: center;
         margin-left: 2rem;
         margin-right: 2rem;
-
     }
 
     .sidebar {
@@ -935,6 +933,16 @@ h6 {
     .products-pic {
         flex-wrap: wrap;
         justify-content: flex-start;
+    }
+
+    .frame {
+        margin-top: 18px;
+        width: 80%;
+        padding:0;
+    }
+    .card-title {
+        font-size: 1.6rem;
+        line-height: 1.4;
     }
 
     .card-shop {
@@ -1000,15 +1008,23 @@ h6 {
         justify-content: center;
         margin-left: 1rem;
         margin-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sidebar {
         width: 48%;
+        /* margin: 0 auto; */
+        margin-left: auto;
+        margin-right: auto;
 
     }
 
     .postlist {
         width: 50%;
+        /* margin: 0 auto; */ 
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
