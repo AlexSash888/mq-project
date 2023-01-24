@@ -207,7 +207,9 @@ h6 {
 
 .picture_trends {
     display: flex;
-    width: calc(25% - 0.4rem);
+    flex-direction: column;
+    justify-content: flex-end;
+    width: calc(25% - 4px);
     position: relative;
     min-height: 32rem;
     background-color: gray;
@@ -241,7 +243,6 @@ h6 {
 
 
 .trends_content {
-    position: absolute;
     bottom: 1.5rem;
     left: 1.5rem;
     right: 1.5rem;
@@ -276,23 +277,23 @@ h6 {
 }
 
 .trends_title-garden {
-    height: 4.2em;
+    height: auto;
     /* overflow: auto; */
 }
 
 .trends_title-cheeses {
-    height: 8.3em;
-    /* overflow: auto; */
+    height: auto;
+    
 }
 
 .trends_title-mountains {
-    height: 6em;
-    /* overflow: auto; */
+    height: auto;
+    
 }
 
 .trends_title-vitamins {
-    height: 6.25em;
-    /* overflow: auto; */
+    height: auto;
+    
 }
 
 
@@ -311,24 +312,24 @@ h6 {
 .shop_description_bunny {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 44.5%;
-    /* overflow: auto; */
+    height: auto;
+    
 }
 
 
 .shop_description_pillow {
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 22.5%;
-    /* overflow: scroll;  */
+    height: auto;
+   
 }
 
 .shop_description_frame {
 
     font-size: 1.5rem;
     line-height: 2.2rem;
-    height: 33.5%;
-    /* overflow: auto;*/
+    height: auto;
+   
 }
 
 
@@ -503,8 +504,8 @@ h6 {
 
 .picture {
 
-    width: 38rem;
-    height: 29.4rem;
+    width: 380px;
+    height: 294px;
 }
 
 .frame {
@@ -536,19 +537,9 @@ h6 {
 
 
 
-/* Заголовок c подчеркиванием  Заголовок c подчеркиванием  Заголовок c подчеркиванием */
+
  
 
-
-/* 
-.title_sidebar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-bottom: 1rem;
-
-} */
 
 .new-posts-aside {
 font-size: 1.4rem;
@@ -573,7 +564,7 @@ text-align: center;
 }
 
 .img_post {
-    width: 7rem;
+    width: 70px;
 }
 
 .aside-content {
