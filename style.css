@@ -946,30 +946,32 @@ h6 {
         background-image: url("../images/banner-mobile.jpg");
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
-        height: 100vh;
-      
+        width: 90%;
+        height: 100vmax;
+
     }
 
     .trends-pic {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
-       
+        width: 90%;
+
     }
 
+
     .picture_trends {
-        width: calc(100% - 0.3rem);
+        /* width: calc(100% - 0.3rem); */
+        width: 90%;
         margin: 0.3rem;
-       
+
     }
 
     .container {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        width: 80%;
+        width: 90%;
     }
 
     .header-logo {
@@ -988,78 +990,51 @@ h6 {
 
     .frame {
         margin-top: 18px;
-        width: 80%;
+        width: 90%;
         padding: 0;
     }
+
     .card-shop {
         margin: 3rem auto;
     }
 
-    .travel-health {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-}
-
-
-
-@media (max-width:640px) and (orientation: portrait) {
-    .trends-pic {
-        display: flex;
-        flex-direction: column;
-        width: 100vw;
-    }
-
-    .picture_trends {
-        width: calc(100% - 0.3rem);
-        margin: 0.3rem;
-    }
-
-     .card_content {
+    .card_content {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        /* margin-left: 1rem;
-        margin-right: 1rem; */
+        margin-left: 1rem;
+        margin-right: 1rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     .sidebar {
-        width: 48%;
-        /* margin: 0 auto; */
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
 
     }
 
     .postlist {
-        width: 50%;
-        /* margin: 0 auto; */
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
     }
 
-    .frame {
-        margin-top: 18px;
-        width: 80%;
-        padding: 0;
-    }
 
-    .card-shop {
-        margin: 3rem auto;
-    }
-    
     .travel-health {
-        width: 80%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 
+
+/*
 @media (max-width: 640px) and (orientation: landscape) {
     .picture_trends {
         width: calc(50% - 0.3rem);
@@ -1083,7 +1058,7 @@ h6 {
 
     .card_content {
         flex-flow: column nowrap;
-        /* justify-content: center; */
+       
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -1104,6 +1079,7 @@ h6 {
     }
     
 }
+*/
 
 /* гамбургер-меню  гамбургер-меню   гамбургер-меню */
 
