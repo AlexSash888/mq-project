@@ -240,14 +240,13 @@ h6 {
 
 }
 
-
-
 .trends_content {
     bottom: 1.5rem;
     left: 1.5rem;
     right: 1.5rem;
     border: 3px solid #b59f5b;
-    padding: 6%;
+    padding: 5%;
+    margin: 18px;
     z-index: 2;
 
 }
@@ -255,7 +254,6 @@ h6 {
 .trends_content_header {
     width: 100%;
 }
-
 
 .picture_trends::after {
     content: "";
@@ -330,8 +328,6 @@ h6 {
 
 }
 
-
-
 .shops_link {
     text-transform: uppercase;
     font-size: 2rem;
@@ -395,7 +391,6 @@ h6 {
     margin-right: auto;
     margin-top: 30px;
 }
-
 
 
 
@@ -563,7 +558,6 @@ h6 {
 .aside-content {
     display: block;
     text-align: left;
-    /* padding-top: 1rem; */
     margin-left: 1.5rem;
     margin-top: 0.5rem;
     width: 18.5rem;
@@ -879,7 +873,7 @@ h6 {
         margin-bottom: 0.3rem;
     }
 
-    .picture_trends:nth-child(2n) {
+    .picture_trends:nth-child(even) {
         margin-left: 0.3rem;
     }
 
@@ -954,13 +948,28 @@ h6 {
         margin-right: auto;
         width: 100%;
         height: 100vh;
+      
     }
 
+    .trends-pic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+       
+    }
+
+    .picture_trends {
+        width: calc(100% - 0.3rem);
+        margin: 0.3rem;
+       
+    }
 
     .container {
         flex-wrap: wrap;
         flex-direction: column;
-        width: 90%;
+        align-items: center;
+        width: 80%;
     }
 
     .header-logo {
@@ -976,6 +985,22 @@ h6 {
         font-size: 2.6rem;
         margin-top: 5rem;
     }
+
+    .frame {
+        margin-top: 18px;
+        width: 80%;
+        padding: 0;
+    }
+    .card-shop {
+        margin: 3rem auto;
+    }
+
+    .travel-health {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }
 
 
@@ -992,12 +1017,12 @@ h6 {
         margin: 0.3rem;
     }
 
-    .card_content {
+     .card_content {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        /* margin-left: 1rem;
+        margin-right: 1rem; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -1017,6 +1042,21 @@ h6 {
         margin-right: auto;
     }
 
+    .frame {
+        margin-top: 18px;
+        width: 80%;
+        padding: 0;
+    }
+
+    .card-shop {
+        margin: 3rem auto;
+    }
+    
+    .travel-health {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 
@@ -1035,16 +1075,34 @@ h6 {
 
     }
 
+     .travel-health {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
     .card_content {
         flex-flow: column nowrap;
+        /* justify-content: center; */
         align-items: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sidebar {
         width: 100vw;
     }
+
+    .frame {
+        margin-top: 18px;
+        width: 80%;
+        padding: 0;
+    }
+
+    .card-shop {
+        margin: 3rem auto;
+    }
+    
 }
 
 /* гамбургер-меню  гамбургер-меню   гамбургер-меню */
@@ -1168,7 +1226,7 @@ h6 {
     width: 88%;
     max-height: 58.5rem;
     margin: auto;
-    border: 1px solid red;
+
 }
 
 .popup {
@@ -1198,7 +1256,7 @@ h6 {
     display: inline-block;
     width: 6.5rem;
     height: 3px;
-    background-color: #e1d9bd;
+    background-color: #ded8c8;
     background-position: center center;
 }
 
@@ -1214,7 +1272,6 @@ h6 {
 
 .label__question {
     display: block;
-    font-family: inherit;
     font-size: 13px;
     margin-bottom: 6px;
 }
@@ -1235,7 +1292,6 @@ h6 {
     padding-left: 20px;
     margin: 0;
     border: none;
-    font-family: inherit;
     font-size: 13px;
     color: #979393;
 
@@ -1247,7 +1303,6 @@ h6 {
 }
 
 .textarea {
-    font-family: inherit;
     width: 100%;
     min-width: 200px;
     max-width: 3000px;
@@ -1263,7 +1318,7 @@ h6 {
     font-size: 13px;
 }
 
-.radio-group:nth-of-type(n+2) {
+.radio-group:nth-of-type(even) {
     margin-left: 25px;
 }
 
@@ -1297,7 +1352,6 @@ h6 {
     color: #ffffff;
     width: 100%;
     background-color: #b59f5b;
-    font-family: inherit;
     text-transform: uppercase;
     font-size: 14px;
     cursor: pointer;
