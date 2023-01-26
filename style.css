@@ -1154,7 +1154,6 @@ h6 {
         justify-content: space-between;
 
     }
-
 }
 
 @media (max-width:640px) {
@@ -1181,11 +1180,8 @@ h6 {
         cursor: pointer;
         z-index: 1;
     }
-   
+
 }
-
-
-
 
 /* Pop-up */
 
