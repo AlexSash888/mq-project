@@ -73,7 +73,9 @@ h6 {
 .header {
     display: block;
     width: 100%;
-    background-color: gray;
+    padding: 28px 0 80px;
+    /* background-color: gray; */
+    background-color: rgba(0,0,0,0.8);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -877,8 +879,13 @@ h6 {
         margin-left: 0.3rem;
     }
 
+    .header-logo{
+      padding-left: 25px;
+    }
+
     .card_content {
         justify-content: center;
+        
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -948,6 +955,7 @@ h6 {
         margin-right: auto;
         width: 90%;
         height: 100vmax;
+        padding: 28px 0 ;
 
     }
 
@@ -1120,8 +1128,8 @@ h6 {
     .menu__btn {
         display: block;
         position: relative;
-        /* top: 10px; */
-        right: 50px;
+        /* top:5px; */
+        right: 30px;
         width: 26px;
         height: 26px;
         cursor: pointer;
@@ -1174,6 +1182,7 @@ h6 {
     .menu__btn {
         display: block;
         position: relative;
+        bottom: 90%;
         left: 50%;
         width: 26px;
         height: 26px;
