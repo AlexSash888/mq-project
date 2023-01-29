@@ -75,7 +75,7 @@ h6 {
     width: 100%;
     padding: 28px 0 80px;
     /* background-color: gray; */
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -304,6 +304,10 @@ h6 {
     width: 30rem;
     outline: 0.3rem solid #b59f5b;
     outline-offset: 2rem;
+    flex-grow: 1;
+    /* position: relative; */
+
+
 }
 
 
@@ -386,14 +390,18 @@ h6 {
 .products-pic {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
-    max-width: 112rem;
+    /* max-width: 112rem; */
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
 }
 
+.pic_in {
+    margin: 0;
+
+}
 
 
 
@@ -406,6 +414,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-between;
     max-width: 120rem;
     min-width: 36rem;
     padding-top: 6.4rem;
@@ -879,13 +888,13 @@ h6 {
         margin-left: 0.3rem;
     }
 
-    .header-logo{
-      padding-left: 25px;
+    .header-logo {
+        padding-left: 25px;
     }
 
     .card_content {
         justify-content: center;
-        
+
         margin-left: 2rem;
         margin-right: 2rem;
     }
@@ -917,12 +926,13 @@ h6 {
 
     .header {
         background-image: url("../images/banner-bg-tablet.jpg");
-        width: 100%;
+        max-width: 100%;
     }
 
     .products-pic {
+
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .frame {
@@ -938,14 +948,55 @@ h6 {
 
     .card-shop {
         margin-left: 4%;
-        width: 46%;
+        width: 41%;
     }
 
     .card-shop:last-child {
         margin-top: 6rem;
     }
 
-}
+    .card-shop:nth-child(2) {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+     /* .our_products {
+        margin-left: 10%;
+    } */
+} 
+
+/* @media (min-width: 801px) and (max-width: 999px) {
+
+    .our_products {
+        margin-left: 5%;
+    }
+} */
+
+
+@media (min-width: 641px) and (max-width: 800px) {
+
+    /* .our_products {
+        margin-left: 3%;
+
+    } */
+
+    .products-pic {
+
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .card-shop {
+        margin-left: 0;
+         width: 24%; 
+    }
+
+    .card-shop:nth-child(2) {
+        margin-left: 30%;
+         margin-right: 1%; 
+    }
+} 
+ 
 
 
 @media (max-width: 640px) {
@@ -955,7 +1006,7 @@ h6 {
         margin-right: auto;
         width: 90%;
         height: 100vmax;
-        padding: 28px 0 ;
+        padding: 28px 0;
 
     }
 
@@ -1005,6 +1056,11 @@ h6 {
 
     .card-shop {
         margin: 3rem auto;
+
+    }
+
+    .products-pic {
+        flex-direction: column;
     }
 
     .card_content {
@@ -1048,23 +1104,17 @@ h6 {
     .picture_trends {
         width: calc(50% - 0.3rem);
     }
-
-
     .picture_trends:nth-child(even) {
         margin-left: 0.3rem;
     }
-
     .picture_trends:nth-child(-n+2) {
         margin-bottom: 0.3rem;
-
     }
-
      .travel-health {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
      }
-
     .card_content {
         flex-flow: column nowrap;
        
@@ -1072,17 +1122,14 @@ h6 {
         margin-left: auto;
         margin-right: auto;
     }
-
     .sidebar {
         width: 100vw;
     }
-
     .frame {
         margin-top: 18px;
         width: 80%;
         padding: 0;
     }
-
     .card-shop {
         margin: 3rem auto;
     }
@@ -1160,12 +1207,10 @@ h6 {
     .container {
         flex-direction: row;
         justify-content: space-between;
-
     }
 }
 
 @media (max-width:640px) {
-
     .header {
         display: flex;
         flex-direction: column;
@@ -1189,7 +1234,6 @@ h6 {
         cursor: pointer;
         z-index: 1;
     }
-
 }
 
 /* Pop-up */
@@ -1384,6 +1428,3 @@ h6 {
     width: 1.4em;
     height: 0.2em;
 }
-
-
-
