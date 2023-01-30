@@ -951,13 +951,11 @@ h6 {
     .card-title {
         font-size: 1.6rem;
         line-height: 1.4;
-            width: 80%;
+        width: 80%;
     }
 
     .card-shop {
         width: 48%;
-
-
         padding-left: 5%;
         padding-right: 5%;
 
@@ -966,7 +964,6 @@ h6 {
     .content_shop {
         width: 90%;
         height: auto;
-
     }
 
     .shop_img {
@@ -984,7 +981,6 @@ h6 {
     .card-shop:nth-child(1) {
         margin-left: 1%;
     }
-
 }
 
 
@@ -1055,7 +1051,7 @@ h6 {
         display: block;
         content: '';
         background: #eee;
-        width: 100%;
+        width: 38rem;
         height: 3px;
         margin-left: auto;
         margin-right: auto;
