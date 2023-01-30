@@ -302,7 +302,7 @@ h6 {
     max-width: 1200px;
     margin-bottom: 10rem;
     margin-top: 0.5rem;
-    margin-left:auto ;
+    margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 }
@@ -310,21 +310,21 @@ h6 {
 .products-pic {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     /* width: 100%;  */
-     /* max-width: 112rem;  */
+    /* max-width: 112rem;  */
     /* margin-left: auto;
     margin-right: auto; */
     padding: 0 15px;
     margin-top: 30px;
-    
+
 }
 
-.card-shop  {
+.card-shop {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 
@@ -336,9 +336,9 @@ h6 {
     outline: 0.3rem solid #b59f5b;
     outline-offset: 2rem;
     flex-grow: 1;
-  
-  } 
- 
+
+}
+
 
 
 .shop_description_bunny {
@@ -410,14 +410,6 @@ h6 {
     border: none;
     cursor: pointer;
 }
-
-
-/* .pic_in {
-    margin: 0;
-} */
-/* .shop_img b{
-    display: block;
-} */
 
 
 
@@ -888,9 +880,9 @@ h6 {
         justify-content: space-between;
     }
 
-      .card-shop {
+    .card-shop {
         width: 30%;
-      }
+    }
 
     .header {
         background-image: url("../images/banner-bg.jpg");
@@ -919,13 +911,13 @@ h6 {
 
     .sidebar {
         width: 31%;
-        margin-left:1.5%;
+        margin-left: 1.5%;
         margin-right: 1.5%;
     }
 
     .postlist {
         width: 63%;
-        margin-left:1.5%;
+        margin-left: 1.5%;
         margin-right: 1.5%;
     }
 
@@ -950,13 +942,6 @@ h6 {
         max-width: 100%;
     }
 
-    /* .products-pic {
-
-        flex-wrap: wrap;
-        justify-content: space-between;
-       
-    } */
-
     .frame {
         margin-top: 18px;
         width: 80%;
@@ -968,19 +953,19 @@ h6 {
         line-height: 1.4;
     }
 
-    .card-shop {  
-            width: 48%;
+    .card-shop {
+        width: 48%;
 
-        
+
         padding-left: 5%;
         padding-right: 5%;
-                  
-    } 
+
+    }
 
     .content_shop {
         width: 90%;
         height: auto;
-        
+
     }
 
     .shop_img {
@@ -991,13 +976,13 @@ h6 {
         margin-top: 6rem;
     }
 
-    .card-shop:nth-child(2) { 
-         margin-right: 1%; 
+    .card-shop:nth-child(2) {
+        margin-right: 1%;
     }
 
-    .card-shop:nth-child(1) { 
-        margin-left: 1%; 
-   }
+    .card-shop:nth-child(1) {
+        margin-left: 1%;
+    }
 
 }
 
@@ -1020,7 +1005,6 @@ h6 {
         width: 90%;
 
     }
-
 
     .picture_trends {
         /* width: calc(100% - 0.3rem); */
@@ -1055,6 +1039,26 @@ h6 {
         margin-top: 18px;
         width: 90%;
         padding: 0;
+    }
+
+    .card-text {
+        padding-top: 0;
+        width: 32rem;
+    }
+
+    .card-title {
+        font-size: 1.7rem;
+    }
+
+    .travel-health::after {
+        display: block;
+        content: '';
+        background: #eee;
+        width: 100%;
+        height: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
 
     .card-shop {
@@ -1101,46 +1105,6 @@ h6 {
     }
 }
 
-
-
-/*
-@media (max-width: 640px) and (orientation: landscape) {
-    .picture_trends {
-        width: calc(50% - 0.3rem);
-    }
-    .picture_trends:nth-child(even) {
-        margin-left: 0.3rem;
-    }
-    .picture_trends:nth-child(-n+2) {
-        margin-bottom: 0.3rem;
-    }
-     .travel-health {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-     }
-    .card_content {
-        flex-flow: column nowrap;
-       
-        align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .sidebar {
-        width: 100vw;
-    }
-    .frame {
-        margin-top: 18px;
-        width: 80%;
-        padding: 0;
-    }
-    .card-shop {
-        margin: 3rem auto;
-    }
-    
-}
-*/
-
 /* гамбургер-меню  гамбургер-меню   гамбургер-меню */
 
 @media (max-width:640px),
@@ -1167,14 +1131,6 @@ h6 {
         top: 0;
         transform: rotate(90deg);
     }
-
-    /* #menu__toggle:checked ~ .menu > .menu-list {
-        visibility: visible;
-        left: 65%;
-        display:flex;
-        flex-direction: column;
-      }
-       */
 
     .menu__btn {
         display: block;
