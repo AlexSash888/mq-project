@@ -166,6 +166,7 @@ h6 {
 
 .trends {
     width: 100%;
+    margin-top: 6rem;
 }
 
 .new-posts-trend {
@@ -195,10 +196,6 @@ h6 {
 
 }
 
-.trends {
-    margin-top: 6rem;
-}
-
 .trends-pic {
     display: flex;
     margin-left: auto;
@@ -224,7 +221,7 @@ h6 {
 
 .picture_trends-garden {
     background-image: url("../images/trend1.jpg");
-
+   
 }
 
 .picture_trends_cheeses {
@@ -233,7 +230,7 @@ h6 {
 
 .picture_trends_mountains {
     background-image: url("../images/trend3.jpg");
-
+    
 }
 
 
@@ -420,16 +417,14 @@ h6 {
 .card_content {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 120rem;
     min-width: 36rem;
-    padding-top: 6.4rem;
-    align-items: stretch;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1%;
-    padding-right: 1%
+    margin-top: 6.4rem;
+    /* align-items: stretch; */
+    margin-left: 2rem;
+    margin-right: 2rem;
+ 
 }
 
 
@@ -446,6 +441,8 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 6rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -493,10 +490,10 @@ h6 {
 .card-text {
     display: inline-block;
     font-family: OpenSans-Regular, sans-serif;
-    width: 36.7rem;
+    max-width: 36.7rem;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    padding-top: 1.9rem;
+    /* padding-top: 1.9rem; */
 }
 
 
@@ -513,11 +510,11 @@ h6 {
     text-transform: uppercase;
 }
 
-.picture {
 
-    width: 380px;
-    height: 294px;
+.article__img {
+    width: 38rem;
 }
+
 
 .frame {
     width: 46%;
@@ -877,7 +874,7 @@ h6 {
     }
 
     .card_content {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .card-shop {
@@ -903,22 +900,21 @@ h6 {
         padding-left: 25px;
     }
 
-    .card_content {
-        justify-content: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
+    /* .card_content {
+        justify-content: space-evenly;
+    
+    } */
 
     .sidebar {
-        width: 31%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
+        width: 27rem;
+        margin-left: 12px;
+        
     }
 
     .postlist {
-        width: 63%;
-        margin-left: 1.5%;
-        margin-right: 1.5%;
+        width: 50%;
+       
+        margin-right: 12px;
     }
 
     .container-headline {
@@ -948,6 +944,10 @@ h6 {
         padding: 0;
     }
 
+    .article__img {
+        max-width: 100%;
+         }
+
     .card-title {
         font-size: 1.6rem;
         line-height: 1.4;
@@ -967,7 +967,7 @@ h6 {
     }
 
     .shop_img {
-        width: 100%;
+        width: auto;
     }
 
     .card-shop:last-child {
@@ -999,16 +999,15 @@ h6 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 90%;
-
+        width: 100%;
     }
 
     .picture_trends {
         /* width: calc(100% - 0.3rem); */
-        width: 90%;
-        margin: 0.3rem;
-
+        width: 100%;
+        margin-bottom: 0.4rem;
     }
+   
 
     .container {
         flex-wrap: wrap;
@@ -1032,9 +1031,10 @@ h6 {
         margin-top: 1.5rem;
     }
 
+   
     .frame {
         margin-top: 18px;
-        width: 90%;
+        width: 100%;
         padding: 0;
     }
 
@@ -1058,25 +1058,36 @@ h6 {
         flex-direction: column;
     }
 
+
+
     .card_content {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-left: auto;
-        margin-right: auto;
+         /* margin-left: 1rem;
+        margin-right: 1rem; */
+        /* margin-left: auto;
+        margin-right: auto;  */
     }
 
+
     .sidebar {
-        width: 80%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
 
+    }
+
+    /* .latest_posts_news {
+        width: 100%;
+    } */
+
+    .aside-content {
+        width: 100%;
     }
 
     .postlist {
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         flex-flow: column nowrap;
@@ -1086,11 +1097,18 @@ h6 {
 
 
     .travel-health {
-        width: 90%;
+         width: 100%; 
         margin-left: auto;
         margin-right: auto;
     }
 
+    .picture {
+        width: 100%;
+    }
+
+    .article__img {
+        width: 100%;
+    }
     
     .travel-health::after {
         display: block;
