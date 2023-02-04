@@ -221,7 +221,7 @@ h6 {
 
 .picture_trends-garden {
     background-image: url("../images/trend1.jpg");
-   
+
 }
 
 .picture_trends_cheeses {
@@ -230,7 +230,7 @@ h6 {
 
 .picture_trends_mountains {
     background-image: url("../images/trend3.jpg");
-    
+
 }
 
 
@@ -424,7 +424,7 @@ h6 {
     /* align-items: stretch; */
     margin-left: 2rem;
     margin-right: 2rem;
- 
+
 }
 
 
@@ -908,12 +908,12 @@ h6 {
     .sidebar {
         width: 27rem;
         margin-left: 12px;
-        
+
     }
 
     .postlist {
         width: 50%;
-       
+
         margin-right: 12px;
     }
 
@@ -946,7 +946,7 @@ h6 {
 
     .article__img {
         max-width: 100%;
-         }
+    }
 
     .card-title {
         font-size: 1.6rem;
@@ -962,12 +962,12 @@ h6 {
     }
 
     .content_shop {
-        width: 90%;
+        width: 100%;
         height: auto;
     }
 
     .shop_img {
-        width: auto;
+        width: 100%;
     }
 
     .card-shop:last-child {
@@ -1007,7 +1007,7 @@ h6 {
         width: 100%;
         margin-bottom: 0.4rem;
     }
-   
+
 
     .container {
         flex-wrap: wrap;
@@ -1031,7 +1031,7 @@ h6 {
         margin-top: 1.5rem;
     }
 
-   
+
     .frame {
         margin-top: 18px;
         width: 100%;
@@ -1064,7 +1064,7 @@ h6 {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-         /* margin-left: 1rem;
+        /* margin-left: 1rem;
         margin-right: 1rem; */
         /* margin-left: auto;
         margin-right: auto;  */
@@ -1097,7 +1097,7 @@ h6 {
 
 
     .travel-health {
-         width: 100%; 
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1109,7 +1109,7 @@ h6 {
     .article__img {
         width: 100%;
     }
-    
+
     .travel-health::after {
         display: block;
         content: '';
@@ -1384,6 +1384,7 @@ h6 {
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .popup__close:after {
