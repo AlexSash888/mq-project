@@ -989,7 +989,7 @@ h6 {
         background-image: url("../images/banner-mobile.jpg");
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        /* width: 90%; */
         height: 100vmax;
         padding: 28px 0;
 
@@ -1064,10 +1064,7 @@ h6 {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-        /* margin-left: 1rem;
-        margin-right: 1rem; */
-        /* margin-left: auto;
-        margin-right: auto;  */
+    
     }
 
 
@@ -1078,9 +1075,7 @@ h6 {
 
     }
 
-    /* .latest_posts_news {
-        width: 100%;
-    } */
+
 
     .aside-content {
         width: 100%;
