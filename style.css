@@ -102,7 +102,7 @@ h6 {
 .container {
     display: flex;
     justify-content: space-between;
-    max-width: 120rem;
+    /* max-width: 120rem; */
     align-items: center;
     position: relative;
     padding: 3rem 1% 2rem;
@@ -419,7 +419,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    max-width: 120rem;
+    /* max-width: 120rem; */
     min-width: 36rem;
     margin-top: 6.4rem;
     /* align-items: stretch; */
