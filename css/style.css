@@ -101,7 +101,7 @@ h6 {
 
 .container {
     display: flex;
-    /* justify-content: space-around; */
+     justify-content: space-around; 
     /* max-width: 120rem; */
     width: 100%;
     align-items: center;
@@ -424,8 +424,8 @@ h6 {
     min-width: 36rem;
     margin-top: 6.4rem;
     /* align-items: stretch; */
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -869,6 +869,12 @@ h6 {
 /* media media media */
 
 
+@media (min-width: 1400px) {
+  .postlist{
+    width: auto;
+  }
+}
+
 
 @media (min-width: 1200px) {
     .picture_trends:nth-child(n+2) {
@@ -887,6 +893,8 @@ h6 {
         background-image: url("../images/banner-bg.jpg");
     }
 }
+
+
 
 @media (min-width: 641px) and (max-width: 1199px) {
     .picture_trends {
