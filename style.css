@@ -101,8 +101,9 @@ h6 {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-around; */
     /* max-width: 120rem; */
+    width: 100%;
     align-items: center;
     position: relative;
     padding: 3rem 1% 2rem;
