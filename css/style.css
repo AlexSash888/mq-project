@@ -298,7 +298,7 @@ h6 {
 /* Shop    */
 
 .our_products {
-    max-width: 1200px;
+    max-width: 120rem;
     margin-bottom: 10rem;
     margin-top: 0.5rem;
     margin-left: auto;
@@ -420,7 +420,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /* max-width: 120rem; */
+     max-width: 120rem; 
     min-width: 36rem;
     margin-top: 6.4rem;
     /* align-items: stretch; */
@@ -868,12 +868,6 @@ h6 {
 
 /* media media media */
 
-
-@media (min-width: 1400px) {
-  .postlist{
-    width: auto;
-  }
-}
 
 
 @media (min-width: 1200px) {
