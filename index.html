@@ -287,13 +287,13 @@
 
 
         <aside class="sidebar">
-            <section class="latest_posts_news">
+            <section class="postlist_news">
                 <div class="headline_container">
                     <h3 class="new-posts-aside">Новые посты</h3>
                 </div>
 
 
-                <section class="post_list">
+                <article class="post_list">
                     <div>
                         <a href="#0"> <img src="images\2.jpg" alt="10 мест, ради которых стоит проснуться"
                                 class="img_post"></a>
@@ -302,13 +302,13 @@
                         <time class="card-date-aside" datetime="2019-06-14">14 июня 2019</time>
 
                         <a href="#0" class="title_link">
-                            <h3 class="title-aside">10 мест, ради которых стоит проснуться</h3>
+                            <h4 class="title-aside">10 мест, ради которых стоит проснуться</h4>
                         </a>
 
                     </div>
-                </section>
+                </article>
 
-                <section class="post_list">
+                <article class="post_list">
                     <div>
                         <a href="#0"> <img src="images\7.jpg" alt="Йoга для начинающих в домашних условиях"
                                 class="img_post"></a>
@@ -317,13 +317,13 @@
                         <time class="card-date-aside" datetime="2019-06-14">14 июня 2019</time>
 
                         <a href="#0" class="title_link">
-                            <h3 class="title-aside">Йога для домашних</h3>
+                            <h4 class="title-aside">Йога для домашних</h4>
                         </a>
 
                     </div>
-                </section>
+                </article>
 
-                <section class="post_list">
+                <article class="post_list">
                     <div>
                         <a href="#0"> <img src="images\45.jpg" alt="Как мы превратили классное место в балкон"
                                 class="img_post"></a>
@@ -332,12 +332,12 @@
                         <time class="card-date-aside" datetime="2019-06-14">14 июня 2019</time>
 
                         <a href="#0" class="title_link">
-                            <h3 class="title-aside">как мы превратили классное место в балкон</h3>
+                            <h4 class="title-aside">как мы превратили классное место в балкон</h4>
                         </a>
                     </div>
-                </section>
+                </article>
 
-                <section class="post_list">
+                <article class="post_list">
                     <div>
                         <a href="#0"> <img src="images\151.jpg" alt="Кулинарный подход к науке" class="img_post"></a>
                     </div>
@@ -345,12 +345,12 @@
                         <time class="card-date-aside" datetime="2019-06-14">14 июня 2019</time>
 
                         <a href="#0" class="title_link">
-                            <h3 class="title-aside">Кулинарный подход к науке</h3>
+                            <h4 class="title-aside">Кулинарный подход к науке</h4>
                         </a>
                     </div>
-                </section>
+                </article>
 
-                <section class="post_list">
+                <article class="post_list">
                     <div>
                         <a href="#0"> <img src="images\501.jpg" alt="Лучшие прически для распущенных волос"
                                 class="img_post"></a>
@@ -359,178 +359,175 @@
                         <time class="card-date-aside" datetime="2019-06-14">14 июня 2019</time>
 
                         <a href="#0" class="title_link">
-                            <h3 class="title-aside">лучшие прически для распущенных волос</h3>
+                            <h4 class="title-aside">лучшие прически для распущенных волос</h4>
                         </a>
                     </div>
-                </section>
+                </article>
+            </section>
 
 
 
+            <form class="search">
+                <label class="form_search">
+                    <span class="visually-hidden">Кнопка поиска</span>
+                    <input type="text" class="field" name="text" placeholder="Найти..." required>
+                </label>
+                <button type="submit" class="button-search">
+                    <span class="visually-hidden">Найти</span>
+                </button>
+            </form>
 
-                <form class="search">
-                    <label class="form_search">
-                        <span class="visually-hidden">Кнопка поиска</span>
-                        <input type="text" class="field" name="text" placeholder="Найти..." required>
-                    </label>
-                    <button type="submit" class="button-search">
-                        <span class="visually-hidden">Найти</span>
-                    </button>
-                </form>
 
+            <section class="latest_posts_sends">
+                <div class="headline_container">
+                    <h3 class="new-posts-aside">Рассылка</h3>
+                </div>
 
-                <section class="latest_posts_sends">
-                    <div class="headline_container">
-                        <h3 class="new-posts-aside">Рассылка</h3>
-                    </div>
+                <div class="email-button">
+                    <form class="send-email">
+                        <label for="email">
+                            <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                placeholder="Ваш email-адрес" required>
+                            <span class="visually-hidden">Введите ваш email</span> </label>
 
-                    <div class="email-button">
-                        <form class="send-email">
-                            <label for="email">
-                                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                                    placeholder="Ваш email-адрес" required>
-                                <span class="visually-hidden">Введите ваш email</span> </label>
+                        <button type="submit" formaction="handler.php">Подписаться<span class="visually-hidden">Кнопка
+                                подписаться на email-рассылку</span></button>
+                    </form>
+                </div>
+            </section>
 
-                            <button type="submit" formaction="handler.php">Подписаться<span
-                                    class="visually-hidden">Кнопка
-                                    подписаться на email-рассылку</span></button>
-                        </form>
-                    </div>
-                </section>
-
-                <section class="latest_posts_sends">
-                    <div class="headline_container">
-                        <h3 class="new-posts-aside">Теги</h3>
-                    </div>
-                    <nav class="tags_nav_wrapper">
-                        <ul class="tags_nav">
-                            <li class="card_tags"><a class="nav_link" href="#0">Fashion</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Music</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Lifestyle</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Art</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Interior</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Travel</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Food</a></li>
-                            <li class="card_tags"><a class="nav_link" href="#0">Health</a></li>
-                        </ul>
-                    </nav>
-                </section>
-
-                <section class="latest_posts">
-                    <div class="headline_container">
-                        <h3 class="new-posts-aside">Темы</h3>
-                    </div>
-                    <ul class="conteiner-themes">
-                        <li><a href="#0" class="card-themes">Красота<sup class="count">12</sup></a></li>
-                        <li> <a href="#0" class="card-themes">Здоровье<sup class="count">14</sup></a></li>
-                        <li><a href="#0" class="card-themes">Образ жизни<sup class="count">145</sup> </a></li>
-                        <li><a href="#0" class="card-themes">Музыка<sup class="count">28</sup></a></li>
-                        <li><a href="#0" class="card-themes">Спорт<sup class="count">62</sup></a></li>
-                        <li><a href="#0" class="card-themes">Йога<sup class="count">8</sup></a></li>
+            <section class="latest_posts_sends">
+                <div class="headline_container">
+                    <h3 class="new-posts-aside">Теги</h3>
+                </div>
+                <nav class="tags_nav_wrapper">
+                    <ul class="tags_nav">
+                        <li class="card_tags"><a class="nav_link" href="#0">Fashion</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Music</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Lifestyle</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Art</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Interior</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Travel</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Food</a></li>
+                        <li class="card_tags"><a class="nav_link" href="#0">Health</a></li>
                     </ul>
-                </section>
+                </nav>
+            </section>
+
+            <section class="latest_posts">
+                <div class="headline_container">
+                    <h3 class="new-posts-aside">Темы</h3>
+                </div>
+                <ul class="conteiner-themes">
+                    <li><a href="#0" class="card-themes">Красота<sup class="count">12</sup></a></li>
+                    <li> <a href="#0" class="card-themes">Здоровье<sup class="count">14</sup></a></li>
+                    <li><a href="#0" class="card-themes">Образ жизни<sup class="count">145</sup> </a></li>
+                    <li><a href="#0" class="card-themes">Музыка<sup class="count">28</sup></a></li>
+                    <li><a href="#0" class="card-themes">Спорт<sup class="count">62</sup></a></li>
+                    <li><a href="#0" class="card-themes">Йога<sup class="count">8</sup></a></li>
+                </ul>
+            </section>
         </aside>
+
+
+
+
+
+        <section class="our_products">
+            <div class="headline_container">
+                <h2 class="new-posts-trend">Наши изделия</h2>
+            </div>
+
+            <div class="products-pic">
+                <article class="card-shop ">
+                    <picture class="pic_in">
+                        <source media="(min-width: 1200px)" class="shop__img" srcset="images/shop-item-desk1.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1199px)" class="shop__img"
+                            srcset="images/shop-item-tablet1.jpg">
+                        <source media="(max-width: 640px)" class="shop__img" srcset="images/shop-item-mobile1.jpg">
+                        <img src="images/shop-item-desk1.jpg" class="shop__img" alt="Фотография диванной подушки">
+                    </picture>
+                    <div class="content_shop">
+                        <div>
+                            <h3><a href="#0" class="shops_link">Подушки на диван</a></h3>
+                            <div class="shop_description_pillow">
+                                <p>Набор из двух подушек с модными принтами.
+                                    Видео о создании
+                                    <span><a href="#0" class="shop_link">здесь</a></span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shop_button">
+                            <div>
+                                <p class="shop_price old_price">1000 &#8381;</p>
+                                <p class="shop_price">800 &#8381;</p>
+                            </div>
+                            <button name="in_shop" class="in_shop">В магазин</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-shop ">
+                    <picture class="pic_in">
+                        <source media="(min-width: 1200px)" class="shop__img" srcset="images/shop-item-desk2.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1199px)" class="shop__img"
+                            srcset="images/shop-item-tablet2.jpg">
+                        <source media="(max-width: 640px)" class="shop__img" srcset="images/shop-item-mobile2.jpg">
+                        <img src="images/shop-item-desk2.jpg" class="shop__img"
+                            alt="Фотография с зайчиком, книгами и чайной чашкой">
+                    </picture>
+                    <div class="content_shop">
+                        <div>
+                            <h3><a href="#0" class="shops_link">Кукла "Зайчик"</a></h3>
+                            <div class="shop_description_bunny">
+                                <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
+                                    <span><a href="#0" class="shop_link">весенняя серия постов </a></span>в
+                                    блоге и несколько подкастов.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shop_button">
+                            <div>
+                                <p class="shop_price">3500 &#8381;</p>
+                            </div>
+                            <button name="in_shop" class="in_shop">В магазин</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card-shop ">
+                    <picture class="pic_in">
+                        <source media="(min-width: 1200px)" class="shop__img" srcset="images/shop-item-desk3.jpg">
+                        <source media="(min-width: 641px) and (max-width: 1199px)" class="shop__img"
+                            srcset="images/shop-item-tablet3.jpg">
+                        <source media="(max-width: 640px)" class="shop__img" srcset="images/shop-item-mobile3.jpg">
+                        <img src="images/shop-item-desk3.jpg" class="shop__img" alt="Фотография с шестиугольной рамкой">
+                    </picture>
+
+
+                    <div class="content_shop">
+                        <div>
+                            <h3><a href="#0" class="shops_link">Шестиугольная рамка</a></h3>
+                            <div class="shop_description_frame">
+                                <p>Необычная рамка для украшения дома из видео
+                                    <span><a href="#0" class="shop_link">«Как сделать рамку
+                                            из подручных средств за 30 минут»</a></span>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="shop_button">
+                            <div>
+                                <p class="shop_price old_price">500 &#8381;</p>
+                                <p class="shop_price">400 &#8381;</p>
+                            </div>
+                            <button name="in_shop" class="in_shop">В магазин</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
     </div>
-
-
-
-
-    <section class="our_products">
-        <div class="headline_container">
-            <h2 class="new-posts-trend">Наши изделия</h2>
-        </div>
-
-        <div class="products-pic">
-            <article class="card-shop ">
-                <picture class="pic_in">
-                    <source class="shop_img" media="(min-width: 1200px)" srcset="images\shop-item-desk1.jpg">
-                    <source class="shop_img" media="(min-width:641px) and (max-width:1199px)" srcset="
-                        images\shop-item-tablet1.jpg">
-                    <sourse class="shop_img" media="(max-width:640px)" srcset="images\shop-item-mobile1.jpg">
-                        <img class="shop_img" src="images\shop-item-desk1.jpg"
-                            alt="10 мест, ради которых стоит проснуться на рассвете">
-                </picture>
-                <div class="content_shop">
-                    <div>
-                        <h3><a href="#0" class="shops_link">Подушки на диван</a></h3>
-                        <div class="shop_description_pillow">
-                            <p>Набор из двух подушек с модными принтами.
-                                Видео о создании
-                                <span><a href="#0" class="shop_link">здесь</a></span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="shop_button">
-                        <div>
-                            <p class="shop_price old_price">1000 &#8381;</p>
-                            <p class="shop_price">800 &#8381;</p>
-                        </div>
-                        <button name="in_shop" class="in_shop">В магазин</button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-shop ">
-                <picture class="pic_in">
-                    <source class="shop_img" media="(min-width: 1200px)" srcset="images\shop-item-desk2.jpg">
-                    <source class="shop_img" media="(min-width:641px) and (max-width:1199px)" srcset="
-                        images\shop-item-tablet3.jpg">
-                    <sourse class="shop_img" media="(max-width:640px)" srcset="images\shop-item-mobile2.jpg">
-                        <img class="shop_img" src="images\shop-item-desk2.jpg"
-                            alt="10 мест, ради которых стоит проснуться на рассвете">
-                </picture>
-                <div class="content_shop">
-                    <div>
-                        <h3><a href="#0" class="shops_link">Кукла "Зайчик"</a></h3>
-                        <div class="shop_description_bunny">
-                            <p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена
-                                <span><a href="#0" class="shop_link">весенняя серия постов </a></span>в
-                                блоге и несколько подкастов.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="shop_button">
-                        <div>
-                            <p class="shop_price">3500 &#8381;</p>
-                        </div>
-                        <button name="in_shop" class="in_shop">В магазин</button>
-                    </div>
-                </div>
-            </article>
-
-            <article class="card-shop ">
-                <picture class="pic_in">
-                    <source class="shop_img" media="(min-width: 1200px)" srcset="images\shop-item-desk3.jpg">
-                    <source class="shop_img" media="(min-width:641px) and (max-width:1199px)" srcset="
-                        images\shop-item-tablet3.jpg">
-                    <sourse class="shop_img" media="(max-width:640px)" srcset="images\shop-item-mobile3.jpg">
-                        <img class="shop_img" src="images\shop-item-desk3.jpg"
-                            alt="10 мест, ради которых стоит проснуться на рассвете">
-                </picture>
-
-
-                <div class="content_shop">
-                    <div>
-                        <h3><a href="#0" class="shops_link">Шестиугольная рамка</a></h3>
-                        <div class="shop_description_frame">
-                            <p>Необычная рамка для украшения дома из видео
-                                <span><a href="#0" class="shop_link">«Как сделать рамку
-                                        из подручных средств за 30 минут»</a></span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="shop_button">
-                        <div>
-                            <p class="shop_price old_price">500 &#8381;</p>
-                            <p class="shop_price">400 &#8381;</p>
-                        </div>
-                        <button name="in_shop" class="in_shop">В магазин</button>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
 
     <footer class="cards__blog">
         <div class="card-footer ">
@@ -539,21 +536,10 @@
                     <li class="footer_pic"><a class="ft_pic footer_icon_dribbble" href="#0" alt="dribbble"><span
                                 class="visually-hidden">ссылка
                                 на dribbble</span></a></li>
-
-
-
                     <li class="footer_pic"><a class="ft_pic footer_icon_pinterest" href="#0" alt="pinterest"><span
                                 class="visually-hidden">ссылка на pinterest</span></a></li>
-
-
-
                     <li class="footer_pic"><a class="ft_pic  footer_icon_tumblr" href="#0" alt="tumblr"><span
                                 class="visually-hidden">ссылка на tumblr</span></a></li>
-
-
-                    <li class="footer_pic"><a class="ft_pic  footer_icon_twitter" href="#0" alt="tumblr"><span
-                                class="visually-hidden">ссылка на tumblr</span></a></li>
-
                 </ul>
             </address>
             <div class="footer_link-copyrights">
