@@ -27,6 +27,10 @@
     box-sizing: border-box;
 }
 
+/* * {
+    outline: 1px solid red;
+} */
+
 a {
     text-decoration: none;
 }
@@ -73,7 +77,7 @@ h6 {
 .header {
     display: block;
     width: 100%;
-    padding: 28px 0 80px;
+    /* padding: 28px 0 80px; */
     /* background-color: gray; */
     background-color: rgba(0, 0, 0, 0.8);
     background-position: center center;
@@ -101,24 +105,31 @@ h6 {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 120rem;
     align-items: center;
     position: relative;
-    padding: 3rem 15px 2rem;
+    padding-top: 3rem;
     margin-left: auto;
     margin-right: auto;
     z-index: 2;
 }
+
+
+
+
 
 .header-logo {
     width: 17.8rem;
 
 }
 
+.menu-list {
+    display: flex;
+}
 
 .menu-list-item {
     display: inline-block;
-    margin-left: 3.5rem;
+    margin-right: 3.5rem;
 }
 
 .menu-link {
@@ -138,8 +149,6 @@ h6 {
     opacity: 0;
 }
 
-
-
 .headline {
     font-size: 4.5rem;
     line-height: 1.66;
@@ -147,14 +156,14 @@ h6 {
     text-transform: uppercase;
     color: white;
     padding-bottom: 12rem;
-    margin-top: 5rem;
+    margin-top: 10rem;
     z-index: 2;
 
 }
 
 .container-headline {
     position: relative;
-    width: 70rem;
+    width: 68rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -295,50 +304,43 @@ h6 {
 
 /* Shop    */
 
-.our_products {
+.shop {
     width: 100%;
     margin-bottom: 10rem;
     margin-top: 0.5rem;
-    /* margin-left: 35px;
-    margin-right: 35px; */
-    padding: 0 15px;
+
 }
 
 .products-pic {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    /* width: 100%;  */
-    /* max-width: 112rem;  */
-    /* margin-left: auto;
-    margin-right: auto; */
-    /* padding: 0 15px; */
+    justify-content: space-around;
+    width: 100%;
+
     margin-top: 30px;
 
 }
 
-.card-shop {
+/* .card-shop {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-}
+} */
 
 
 .content_shop {
-    /* display: inline-block; */
-    height: auto;
+    height: 22rem;
     padding-top: 2.2rem;
-    width: 30em;
+    width: 30rem;
     outline: 0.3rem solid #b59f5b;
     outline-offset: 2rem;
-    flex-grow: 1;
+
 
 }
 
 
 
-.shop_description_bunny {
+.shop_description {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: auto;
@@ -346,7 +348,7 @@ h6 {
 }
 
 
-.shop_description_pillow {
+/* .shop_description_pillow {
     font-size: 1.5rem;
     line-height: 2.2rem;
     height: auto;
@@ -359,7 +361,7 @@ h6 {
     line-height: 2.2rem;
     height: auto;
 
-}
+} */
 
 .shops_link {
     text-transform: uppercase;
@@ -379,9 +381,10 @@ h6 {
 .shop_button {
     padding-top: 3rem;
     display: flex;
-    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
 }
+
 
 .shop_price {
     font-weight: 700;
@@ -417,38 +420,40 @@ h6 {
 .card_content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 0 15px;
-    /* max-width: 120rem;  */
-    min-width: 36rem;
+    max-width: 120rem;
+
     margin-top: 6.4rem;
-    /* align-items: stretch; */
+
     margin-left: 35px;
     margin-right: 35px;
 
 
 }
 
-
-.sidebar {
-    width: 24%;
-}
-
 .postlist {
-    /* width: 66%; */
-    max-width: 77rem;
+    width: 66%;
+
 
 }
 
 .travel-health {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 6rem;
+    align-items: flex-start;
     margin-left: auto;
     margin-right: auto;
 }
 
+.travel-health:nth-child(n+2) {
+    margin-top: 6rem;
+}
 
+
+.article__img {
+    width: 38rem;
+}
 
 .card-title {
     font-family: OpenSans-Bold, sans-serif;
@@ -523,8 +528,7 @@ h6 {
     width: 46%;
     padding-left: 3rem;
     font-family: OpenSans-Bold, sans-serif;
-    position: relative;
-    bottom: 0.4rem;
+    margin-top: -0.6rem;
 
 }
 
@@ -534,6 +538,7 @@ h6 {
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
+    margin-top: 0;
     margin-bottom: 0.8rem;
 }
 
@@ -558,7 +563,13 @@ h6 {
 }
 
 
-/* Посты с фото  Посты с фото   Посты с фото  */
+/* aside */
+
+.sidebar {
+    width: 24%;
+}
+
+
 .post_list {
     height: 7rem;
     text-align: left;
@@ -746,7 +757,7 @@ h6 {
 
 .card-themes {
     font-family: OpenSans-Bold, sans-serif;
-    /* position: relative; */
+  
     line-height: 4.7rem;
     font-weight: bold;
     font-size: 1.4rem;
@@ -768,7 +779,7 @@ h6 {
 
 /* footer footer footer*/
 
-.cards__blog {
+.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -787,7 +798,7 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0 1%; */
+  
 
 }
 
@@ -871,14 +882,10 @@ h6 {
 
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .picture_trends:nth-child(n+2) {
         margin-left: 0.4rem;
     }
-
-    /* .card_content {
-        justify-content: space-evenly;
-    } */
 
     .card-shop {
         width: 30%;
@@ -890,105 +897,21 @@ h6 {
 }
 
 
-
-
-@media (min-width: 801px) and (max-width: 1199px) {
-    .picture_trends {
-        width: calc(50% - 0.3rem);
-        margin-bottom: 0.3rem;
-    }
-
-    .picture_trends:nth-child(even) {
-        margin-left: 0.3rem;
-    }
-
-    .header-logo {
-        padding-left: 25px;
-    }
-
+@media (max-width: 730px) {
     .card_content {
-        /* justify-content: space-between; */
-        padding: 0;
-
-    }
-
-    .sidebar {
-        width: 27rem;
-        /* margin-left: 12px; */
-
-    }
-
-    .postlist {
-        max-width: 50%;
-
-        /* margin-right: 12px; */
-    }
-
-    .container-headline {
-        max-width: 70rem;
-        width: 88%;
-    }
-
-
-    .headline {
-        font-size: 5rem;
-    }
-
-    .trends-pic {
-        display: flex;
-        flex-wrap: wrap;
-
-    }
-
-    .header {
-        background-image: url("../images/banner-bg-tablet.jpg");
-        max-width: 100%;
-    }
-
-    .frame {
-        margin-top: 18px;
-        width: 80%;
-        padding: 0;
-    }
-
-    .article__img {
-        max-width: 100%;
-    }
-
-    .card-title {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        width: 80%;
-    }
-
-    .card-shop {
-        width: 48%;
-        padding-left: 5%;
-        padding-right: 5%;
-
-    }
-
-    .content_shop {
-        /* width: 100%; */
-        height: auto;
-    }
-
-    .shop__img {
-        width: 100%;
-    }
-
-    .products-pic {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .card-shop {
-        width: 41%;
-        margin-left: 4%;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
-@media (min-width: 641px) and (max-width: 800px) {
+@media (min-width: 641px) and (max-width: 1200px) {
+
+    .header {
+        background-image: url("../images/banner-bg-tablet.jpg");
+        width: 100%;
+    }
+
+
     .picture_trends {
         width: calc(50% - 0.3rem);
         margin-bottom: 0.3rem;
@@ -1003,31 +926,51 @@ h6 {
     }
 
     .card_content {
-        justify-content: space-between;
-        padding: 0;
+       
+        align-items: flex-start;
 
     }
 
+    .travel-health {
+        display: block;
+        margin-left: 0;
+        margin-top: 0.6rem;
+    }
+
+    .article__img {
+        width: 100%;
+    }
+
+    .frame {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0.6rem;
+        padding-left: 0;
+    }
+
+
     .sidebar {
         width: 27rem;
-        /* margin-left: 12px; */
+    }
 
+    .aside-content {
+        width: 68%;
+        margin-left: 5%;
     }
 
     .postlist {
         max-width: 50%;
-
-        /* margin-right: 12px; */
     }
 
     .container-headline {
-        max-width: 70rem;
+        max-width: 68rem;
         width: 88%;
     }
 
 
     .headline {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .trends-pic {
@@ -1036,47 +979,6 @@ h6 {
 
     }
 
-    .header {
-        background-image: url("../images/banner-bg-tablet.jpg");
-        max-width: 100%;
-    }
-
-    .frame {
-        margin-top: 18px;
-        width: 80%;
-        padding: 0;
-    }
-
-    .article__img {
-        max-width: 100%;
-    }
-
-    .card-title {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        width: 80%;
-    }
-
-    .card-shop {
-        width: 48%;
-        padding-left: 5%;
-        padding-right: 5%;
-
-    }
-
-    .content_shop {
-        width: 100%;
-        height: auto;
-    }
-
-    .content_shop {
-        /* width: 100%; */
-        height: auto;
-    }
-
-    .shop__img {
-        width: 100%;
-    }
 
     .products-pic {
         flex-wrap: wrap;
@@ -1086,7 +988,54 @@ h6 {
     .card-shop {
         width: 41%;
         margin-left: 4%;
+
     }
+
+    .card-shop:nth-child(2) {
+        margin-right: 4%;
+        margin-left: 10%;
+    }
+
+    .card-shop:last-child {
+        margin-top: 6rem;
+    }
+
+    .shop__img {
+        width: 100%;
+    }
+
+    .content_shop {
+        width: 100%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
+    .trends-pic {
+        display: flex;
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .picture_trends {
+        width: calc(50% - 0.4rem);
+    }
+
+    .picture_trends:nth-child(n+2) {
+        margin-left: 0;
+    }
+
+    .picture_trends:nth-child(2n) {
+        margin-left: 0.4rem;
+    }
+
+    .picture_trends:nth-child(n+3) {
+        margin-top: 0.4rem;
+    }
+
+    .trends_link {
+        font-size: 1.7rem;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -1094,13 +1043,12 @@ h6 {
         background-image: url("../images/banner-mobile.jpg");
         margin-left: auto;
         margin-right: auto;
-        /* width: 90%; */
-        height: 100vmax;
         padding: 28px 0;
 
     }
 
     .trends-pic {
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1156,11 +1104,16 @@ h6 {
     .card-shop {
         margin: 3rem auto;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
 
-    .products-pic {
+    .shop {
+        display: flex;
         flex-direction: column;
+        margin-bottom: 0;
     }
 
 
@@ -1174,22 +1127,38 @@ h6 {
 
 
     .sidebar {
+   
         width: 100%;
-        width: calc(100% - 30px);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 40px;
 
     }
-
-
 
     .aside-content {
         width: 100%;
     }
 
+    .frame {
+        width: 100%;
+    }
+
+    .conteiner-themes {
+        width: 100%;
+    }
+
+    .headline_container,
+    .latest_posts_sends,
+    .shop,
+    .footer,
+    .footer_link-copyrights {
+        margin-top: 4rem;
+    }
+
+
     .postlist {
         width: 100%;
-        width: calc(100% - 30px);
+        /* width: calc(100% - 30px); */
         margin-left: auto;
         margin-right: auto;
         flex-flow: column nowrap;
@@ -1197,6 +1166,9 @@ h6 {
         justify-content: center;
     }
 
+    .trends-pic {
+        display: block;
+    }
 
     .travel-health {
         width: 100%;
@@ -1204,8 +1176,9 @@ h6 {
         margin-right: auto;
     }
 
-    .picture {
-        width: 100%;
+    .picture_trends:nth-child(n+2) {
+        margin-left: 0;
+        margin-top: 0.3rem;
     }
 
     .article__img {
@@ -1222,7 +1195,77 @@ h6 {
         margin-right: auto;
         margin-top: 20px;
     }
+
+    .products-pic {
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-shop:nth-child(n+2) {
+        margin-top: 45px;
+    }
+
+    .shop__img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85vw;
+    }
+    .content_shop {
+        width: 85vw;  
+    }
+
+    .footer {
+        width: 90%;
+    }
+
+    .picture {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
 }
+
+ 
+@media (max-width: 640px) and (orientation: landscape) {
+    .header {
+        background-image: url("../images/banner-bg-tablet.jpg");
+        width: 100%;
+    }
+
+    .header-logo{
+        order: 1;
+        margin-top: 6%; 
+    }
+
+    .container-headline{
+        width: 48rem;
+    }
+
+    .trends-pic{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+
+    .picture_trends{
+        width: calc(50% - 0.4rem);
+    }
+
+    .picture_trends:nth-child(2n) {
+        margin-left: 0.4rem;
+    }
+    .picture_trends:nth-child(n+2) {
+        margin-top: 0;
+    }
+    .picture_trends:nth-child(n+3) {
+        margin-top: 0.4rem;
+    }
+
+} 
+
 
 /* гамбургер-меню  гамбургер-меню   гамбургер-меню */
 
@@ -1327,6 +1370,11 @@ h6 {
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     z-index: 8;
+    
+}
+ 
+.theEnd{
+    display: none;
 }
 
 .popup-container {
