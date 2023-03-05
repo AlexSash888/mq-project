@@ -89,7 +89,6 @@ h6 {
 
 }
 
-
 .header::after {
     content: "";
     position: absolute;
@@ -113,9 +112,6 @@ h6 {
     margin-right: auto;
     z-index: 2;
 }
-
-
-
 
 
 .header-logo {
@@ -313,20 +309,17 @@ h6 {
 
 .products-pic {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
 
     margin-top: 30px;
 
 }
 
-/* .card-shop {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-} */
-
+.card-shop {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 
 .content_shop {
     height: 22rem;
@@ -334,11 +327,7 @@ h6 {
     width: 30rem;
     outline: 0.3rem solid #b59f5b;
     outline-offset: 2rem;
-
-
 }
-
-
 
 .shop_description {
     font-size: 1.5rem;
@@ -346,22 +335,6 @@ h6 {
     height: auto;
 
 }
-
-
-/* .shop_description_pillow {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    height: auto;
-
-}
-
-.shop_description_frame {
-
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    height: auto;
-
-} */
 
 .shops_link {
     text-transform: uppercase;
@@ -434,8 +407,7 @@ h6 {
 
 .postlist {
     width: 66%;
-
-
+    margin-bottom: 3rem;
 }
 
 .travel-health {
@@ -757,7 +729,7 @@ h6 {
 
 .card-themes {
     font-family: OpenSans-Bold, sans-serif;
-  
+
     line-height: 4.7rem;
     font-weight: bold;
     font-size: 1.4rem;
@@ -784,7 +756,7 @@ h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 120rem;
+    width: 100%;
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
@@ -798,7 +770,7 @@ h6 {
     min-width: 36rem;
     margin-left: auto;
     margin-right: auto;
-  
+
 
 }
 
@@ -887,9 +859,9 @@ h6 {
         margin-left: 0.4rem;
     }
 
-    .card-shop {
+    /* .card-shop {
         width: 30%;
-    }
+    } */
 
     .header {
         background-image: url("../images/banner-bg.jpg");
@@ -926,7 +898,7 @@ h6 {
     }
 
     .card_content {
-       
+
         align-items: flex-start;
 
     }
@@ -976,19 +948,17 @@ h6 {
     .trends-pic {
         display: flex;
         flex-wrap: wrap;
-
     }
-
 
     .products-pic {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .card-shop {
         width: 41%;
         margin-left: 4%;
-
+        margin-right: 0;
     }
 
     .card-shop:nth-child(2) {
@@ -1035,7 +1005,6 @@ h6 {
     .trends_link {
         font-size: 1.7rem;
     }
-
 }
 
 @media (max-width: 640px) {
@@ -1044,9 +1013,7 @@ h6 {
         margin-left: auto;
         margin-right: auto;
         padding: 28px 0;
-
     }
-
     .trends-pic {
 
         display: flex;
@@ -1056,11 +1023,9 @@ h6 {
     }
 
     .picture_trends {
-        /* width: calc(100% - 0.3rem); */
         width: 100%;
         margin-bottom: 0.4rem;
     }
-
 
     .container {
         flex-wrap: wrap;
@@ -1078,12 +1043,10 @@ h6 {
         width: 28rem;
     }
 
-
     .headline {
         font-size: 2.6rem;
         margin-top: 1.5rem;
     }
-
 
     .frame {
         margin-top: 18px;
@@ -1107,7 +1070,6 @@ h6 {
         display: flex;
         flex-direction: column;
         align-items: center;
-
     }
 
     .shop {
@@ -1116,18 +1078,14 @@ h6 {
         margin-bottom: 0;
     }
 
-
-
     .card_content {
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
-
     }
 
-
     .sidebar {
-   
+
         width: 100%;
         margin-left: auto;
         margin-right: auto;
@@ -1155,15 +1113,14 @@ h6 {
         margin-top: 4rem;
     }
 
-
     .postlist {
         width: 100%;
-        /* width: calc(100% - 30px); */
         margin-left: auto;
         margin-right: auto;
         flex-flow: column nowrap;
         align-items: center;
         justify-content: center;
+        margin-bottom: 0;
     }
 
     .trends-pic {
@@ -1213,12 +1170,13 @@ h6 {
         margin-right: auto;
         width: 85vw;
     }
+
     .content_shop {
-        width: 85vw;  
+        width: 85vw;
     }
 
     .footer {
-        width: 90%;
+        width: 100%;
     }
 
     .picture {
@@ -1229,42 +1187,44 @@ h6 {
     }
 }
 
- 
+
 @media (max-width: 640px) and (orientation: landscape) {
     .header {
         background-image: url("../images/banner-bg-tablet.jpg");
         width: 100%;
     }
 
-    .header-logo{
+    .header-logo {
         order: 1;
-        margin-top: 6%; 
+        margin-top: 6%;
     }
 
-    .container-headline{
+    .container-headline {
         width: 48rem;
     }
 
-    .trends-pic{
+    .trends-pic {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
-    .picture_trends{
+    .picture_trends {
         width: calc(50% - 0.4rem);
     }
 
     .picture_trends:nth-child(2n) {
         margin-left: 0.4rem;
     }
+
     .picture_trends:nth-child(n+2) {
         margin-top: 0;
     }
+
     .picture_trends:nth-child(n+3) {
         margin-top: 0.4rem;
     }
 
-} 
+}
 
 
 /* гамбургер-меню  гамбургер-меню   гамбургер-меню */
@@ -1370,10 +1330,10 @@ h6 {
     background-color: rgba(0, 0, 0, 0.8);
     display: flex;
     z-index: 8;
-    
+
 }
- 
-.theEnd{
+
+.theEnd {
     display: none;
 }
 
