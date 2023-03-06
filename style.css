@@ -1012,14 +1012,16 @@ h6 {
 
 @media (max-width: 640px) {
     .header {
+        display: flex;
+        flex-direction: column;
         background-image: url("../images/banner-mobile.jpg");
         margin-left: auto;
         margin-right: auto;
-        padding: 28px 0;
+        padding: 3rem 0 0;
+        height: 80vh;
     }
 
     .trends-pic {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1157,6 +1159,12 @@ h6 {
         margin-top: 20px;
     }
 
+
+    .travel-health__after:after {
+        display: none;
+    }
+
+
     .products-pic {
         width: 300px;
         display: block;
@@ -1229,6 +1237,7 @@ h6 {
     }
 
 }
+
 @media (max-width: 550px) {
     .content_shop {
         width: 81vw;
@@ -1270,7 +1279,7 @@ h6 {
     .menu__btn {
         display: block;
         position: relative;
-       /* left: -50%; */
+        /* left: -50%; */
         right: 30px;
         width: 26px;
         height: 26px;
