@@ -25,6 +25,10 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    box-sizing: inherit;
+}
+
 /*
 .* {
     outline: 1px solid red;
