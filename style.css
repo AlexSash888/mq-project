@@ -29,6 +29,9 @@ html {
     box-sizing: inherit;
 }
 
+
+
+
 /*
 .* {
     outline: 1px solid red;
@@ -396,7 +399,6 @@ h6 {
     border: none;
     cursor: pointer;
 }
-
 
 
 
@@ -1222,17 +1224,16 @@ h6 {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 85vw;
+        width: 84vw;
     }
 
     .content_shop {
-        width: 85vw;
+        width: calc(100vw - 29%);
     }
 
     .footer {
         width: 95%;
-        /* padding-right: 3%;
-        padding-left: 3%; */
+
     }
 
     .picture {
