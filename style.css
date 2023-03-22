@@ -903,7 +903,7 @@ h6 {
         padding-left: 2%;
         padding-right: 2%;
         align-items: flex-start;
-        /* justify-content: space-evenly; */
+        justify-content: space-around;
 
     }
 
@@ -927,9 +927,9 @@ h6 {
 
 
     .sidebar {
-        max-width: 30rem;
-        width: 100%;
-        padding-right: 2%;
+        max-width: 33rem;
+        /* width: 34%; */
+       
     }
 
     .aside-content {
@@ -940,7 +940,6 @@ h6 {
     .postlist {
 
         flex-basis: 50%;
-        /* padding-left: 2%; */
     }
 
     .container-headline {
@@ -964,9 +963,9 @@ h6 {
     }
 
     .shop {
-        padding-left: 1%;
-        padding-right: 1%;
-
+        display: flex;
+        flex-direction: column;
+        flex-basis: 90%;
     }
 
     .card-shop {
@@ -993,8 +992,7 @@ h6 {
     }
 
     .footer {
-        padding-left: 2%;
-        padding-right: 2%;
+       flex-basis: 91%;
     }
 }
 
@@ -1010,13 +1008,13 @@ h6 {
     }
 
     .sidebar {
-        padding-right: 1%;
+        /* padding-right: 1%; */
         max-width: 26rem;
     }
 
-    .postlist {
-        padding-left: 1%;
-    }
+    /* .postlist {
+         padding-left: 1%; 
+    } */
 }
 
 
@@ -1241,8 +1239,11 @@ h6 {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
+        
     }
 }
+
+
 
 
 
