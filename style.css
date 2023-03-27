@@ -197,6 +197,21 @@ h6 {
   margin-right: auto;
   margin-top: 30px;
 }
+.category_link {
+  text-transform: uppercase;
+  color: #b59f5b;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.category_card {
+  margin-right: 2rem;
+}
+
+.category_card:last-child {
+  margin-right: 0;
+}
 
 .picture_trends {
   display: flex;
@@ -468,15 +483,6 @@ h6 {
   text-align: left;
   margin-top: 0;
   margin-bottom: 0.8rem;
-}
-
-.category_link {
-  text-transform: uppercase;
-  color: #b59f5b;
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  margin-right: 2rem;
 }
 
 .new-posts-aside {
