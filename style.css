@@ -342,7 +342,7 @@ h6 {
 }
 
 .shop_button {
-  padding-top: 3rem;
+  padding-top: 9%;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -841,10 +841,9 @@ h6 {
     padding-left: 0;
   }
 
-  .sidebar {
-    max-width: 33rem;
-    /* width: 34%; */
-  }
+  /* .sidebar {
+    width: 26rem;
+  } */
 
   .aside-content {
     width: 68%;
@@ -908,7 +907,7 @@ h6 {
   }
 }
 
-@media (min-width: 641px) and (max-width: 730px) {
+@media (min-width: 641px) and (max-width: 838px) {
   .card_content {
     margin-left: 0;
     margin-right: 0;
@@ -920,13 +919,8 @@ h6 {
   }
 
   .sidebar {
-    /* padding-right: 1%; */
-    max-width: 26rem;
+    width: 26rem;
   }
-
-  /* .postlist {
-         padding-left: 1%; 
-    } */
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait) {
@@ -957,7 +951,19 @@ h6 {
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 641px) and (max-width: 647px) {
+  .shops_button-bunny {
+    padding-top: 3%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 658px) {
+  .shops_button-frame {
+    padding-top: 2%;
+  }
+}
+
+@media (max-width: 641px) {
   .header {
     display: flex;
     flex-direction: column;
